@@ -1,0 +1,17 @@
+{
+  "name": "teste-front",
+  "version": "1.0.0",
+  "description": "teste do frontend vemvemser",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Alain Delon and Eduaardo Queiroz",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^9.5.4"
+  },
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.34.0"
+  }
+}
