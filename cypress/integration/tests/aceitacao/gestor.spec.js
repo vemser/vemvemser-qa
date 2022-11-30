@@ -21,6 +21,88 @@ context('Gestor', () => {
                 })
         });
     })
+    context('Listar gestor por id', () => {
+        it('GET - Deve listar o gestor passando ID', () => {
+            cy.allure()
+                .epic('Gestor')
+                .feature('Listar gestor no banco de dados passando ID')
+                .story('Id correto')
+            let nome = faker.name.firstName();
+            let email = `${faker.name.lastName()}.${faker.name.firstName()}@dbccompany.com.br`;
+            let senha = faker.internet.password();
+            let tipoCargo = 1;
+
+            gestor.gestorCadastro(nome, email, senha, tipoCargo)
+                .then((response) => {
+                    expect(response.status).to.eq(200);
+                    expect(response.body).to.have.property('idGestor');
+                    expect(response.body.nome).to.eq(nome);
+
+                    let idCriado = response.body.idGestor
+                    gestor.gestorListarPorId(idCriado)
+                        .then((response) => {
+                            expect(response.status).to.eq(200)
+                            expect(response.body).to.have.property('idGestor');
+                            expect(response.body).to.have.property('nome')
+                            gestor.gestorDeletar(response.body.idGestor)
+                                .then((response) => {
+                                    expect(response.status).to.eq(204)
+                                })
+                        })
+                })
+        });
+
+        it('GET - Testar listar gestor passando id inexistente', () => {
+            cy.allure()
+                .epic('Gestor')
+                .feature('Listar gestor no banco de dados passando ID')
+                .story('Id correto')
+
+            let nome = faker.name.firstName();
+            let email = `${faker.name.lastName()}.${faker.name.firstName()}@dbccompany.com.br`;
+            let senha = faker.internet.password();
+            let tipoCargo = 1;
+
+            gestor.gestorCadastro(nome, email, senha, tipoCargo)
+                .then((response) => {
+                    expect(response.status).to.eq(200);
+                    gestor.gestorDeletar(response.body.idGestor)
+                        .then((response) => {
+                            expect(response.status).to.eq(204)
+                        })
+                    gestor.gestorListarPorId(response.body.idGestor)
+                        .then((response) => {
+                            expect(response.status).to.eq(400)
+                            expect(response.body.message).to.contain("Usuario não encontrado!")
+                        })
+                })
+
+        });
+
+        it('GET - Testar listar gestor passando id inválido', () => {
+            cy.allure()
+                .epic('Gestor')
+                .feature('Listar gestor no banco de dados passando ID')
+                .story('Id inválido')
+            gestor.gestorListarPorId(NaN)
+                .then((response) => {
+                    expect(response.status).to.eq(400)
+                })
+        });
+    })
+
+    context('Listar contas inativas', () => {
+        it('GET - Listar todas as contas inativas', () => {
+            cy.allure()
+                .epic('Gestor')
+                .feature('Listar contas inativas')
+                .story('Nenhum dado necessário')
+            gestor.gestorListarInativas()
+                .then((response) => {
+                    expect(response.status).to.eq(200)
+                })
+        });
+    })
 
     context('Adicionar Gestor', () => {
         it('POST - Deve adicionar um novo gestor', () => {
@@ -49,6 +131,7 @@ context('Gestor', () => {
                         })
                 })
         });
+
 
         it('POST - Testar adicionar gestor sem passar payload no body', () => {
             cy.allure()
@@ -87,7 +170,6 @@ context('Gestor', () => {
             //Gerando novos dados
             let nome = 10;
             let email = `${faker.name.lastName()}.${faker.name.firstName()}@dbccompany.com.br`;
-
             let senha = faker.internet.password();
             let tipoCargo = 1;
 
@@ -107,7 +189,6 @@ context('Gestor', () => {
             //Gerando novos dados
             let nome = 'Al';
             let email = `${faker.name.lastName()}.${faker.name.firstName()}@dbccompany.com.br`;
-
             let senha = faker.internet.password();
             let tipoCargo = 1;
 
@@ -147,7 +228,6 @@ context('Gestor', () => {
             //Criando um novo gestor
             let nome = faker.name.firstName();
             let email = `${faker.name.lastName()}.${faker.name.firstName()}@dbccompany.com.br`;
-
             let senha = faker.internet.password();
             let tipoCargo = 1;
             gestor.gestorCadastro(nome, email, senha, tipoCargo)
@@ -200,7 +280,6 @@ context('Gestor', () => {
             //Criando um gestor
             let nome = faker.name.firstName();
             let email = `${faker.name.lastName()}.${faker.name.firstName()}@dbccompany.com.br`;
-
             let senha = faker.internet.password();
             let tipoCargo = 1;
             gestor.gestorCadastro(nome, email, senha, tipoCargo)
@@ -211,7 +290,6 @@ context('Gestor', () => {
                     //Gerando novos dados para atualizar
                     nome = faker.name.firstName();
                     let email = `${faker.name.lastName()}.${faker.name.firstName()}@dbccompany.com.br`;
-
                     senha = faker.internet.password();
                     tipoCargo = 1;
                     gestor.gestorAtualizar(idCriado, nome, email, senha, tipoCargo)
@@ -236,7 +314,6 @@ context('Gestor', () => {
 
             let nome = faker.name.firstName();
             let email = `${faker.name.lastName()}.${faker.name.firstName()}@dbccompany.com.br`;
-
             let senha = faker.internet.password();
             let tipoCargo = 1;
             gestor.gestorAtualizar(0, nome, email, senha, tipoCargo)
@@ -253,7 +330,6 @@ context('Gestor', () => {
 
             let nome = faker.name.firstName();
             let email = `${faker.name.lastName()}.${faker.name.firstName()}@dbccompany.com.br`;
-
             let senha = faker.internet.password();
             let tipoCargo = 1;
             gestor.gestorCadastro(nome, email, senha, tipoCargo)

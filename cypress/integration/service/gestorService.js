@@ -95,4 +95,31 @@ export default class Gestor {
             failOnStatusCode: false
         })
     }
+
+    gestorListarPorId(id) {
+        return cy.request({
+            method: 'GET',
+            url: `${baseUrl}/gestor/id-gestor`,
+            qs: {
+                "idGestor": id
+            },
+            headers: {
+                Authorization: `Bearer ${token}`,
+                'Content-Type': 'application/json'
+            },
+            failOnStatusCode: false
+        });
+    }
+
+    gestorListarInativas() {
+        return cy.request({
+            method: 'GET',
+            url: `${baseUrl}/gestor/contas-inativas`,
+            headers: {
+                Authorization: `Bearer ${token}`,
+                'Content-Type': 'application/json'
+            },
+            failOnStatusCode: false
+        });
+    }
 }

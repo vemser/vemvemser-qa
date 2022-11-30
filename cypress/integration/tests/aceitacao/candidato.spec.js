@@ -18,9 +18,9 @@ context('Candidado', () => {
             candidato.candidatoListar()
                 .then((response) => {
                     expect(response.status).to.eq(200);
-                    expect(response.body[0]).to.have.property('nome');
-                    expect(response.body[0]).to.have.property('idCandidato');
-                    expect(response.body[0]).to.have.property('email');
+                    expect(response.body.elementos[0]).to.have.property('nome');
+                    expect(response.body.elementos[0]).to.have.property('idCandidato');
+                    expect(response.body.elementos[0]).to.have.property('email');
                 })
         });
     })
@@ -34,18 +34,19 @@ context('Candidado', () => {
 
 
             let nome = faker.name.firstName();
-            let genero = 'Masculino';
-            let email = faker.internet.email();
+            let dataNascimento = "2022-11-30";
+            let email = `${faker.name.firstName()}.${faker.name.lastName()}@dbccompany.com.br`;
             let telefone = faker.random.numeric(9);
             let rg = faker.random.numeric(9);
             let cpf = candidato.gerarCPF();
             let estado = 'BA';
             let cidade = faker.address.cityName();
+            let pcdboolean = false;
             let idFormulario;
             formulario.formularioCadastro(formBody)
                 .then((response) => {
                     idFormulario = response.body.idFormulario
-                    candidato.candidatoCadastro(nome, genero, email, telefone, rg, cpf, estado, cidade, idFormulario)
+                    candidato.candidatoCadastro(nome, dataNascimento, email, telefone, rg, cpf, estado, cidade, pcdboolean, idFormulario)
                         .then((response) => {
                             expect(response.status).to.eq(200)
                             expect(response.body.nome).to.eq(nome)
@@ -80,18 +81,19 @@ context('Candidado', () => {
                 .story('Sem preencher RG');
 
             let nome = faker.name.firstName();
-            let genero = 'Masculino';
-            let email = faker.internet.email();
+            let dataNascimento = "2022-11-30";
+            let email = `${faker.name.firstName()}.${faker.name.lastName()}@dbccompany.com.br`;
             let telefone = faker.random.numeric(9);
             let rg = faker.random.numeric(9);
             let cpf = candidato.gerarCPF();
             let estado = 'BA';
             let cidade = faker.address.cityName();
+            let pcdboolean = false;
             let idFormulario;
             formulario.formularioCadastro(formBody)
                 .then((response) => {
                     idFormulario = response.body.idFormulario
-                    candidato.candidatoCadastro(nome, genero, email, telefone, cpf, estado, cidade, idFormulario)
+                    candidato.candidatoCadastro(nome, dataNascimento, email, telefone, cpf, estado, cidade, pcdboolean, idFormulario)
                         .then((response) => {
                             expect(response.status).to.eq(400)
                             candidato.candidatoDeletar(response.body.idCandidato)
@@ -113,19 +115,21 @@ context('Candidado', () => {
                 .story('Com CPF inválido');
 
             let nome = faker.name.firstName();
-            let genero = 'Masculino';
-            let email = faker.internet.email();
+            let dataNascimento = "2022-11-30";
+            let email = `${faker.name.firstName()}.${faker.name.lastName()}@dbccompany.com.br`;
             let telefone = faker.random.numeric(9);
             let rg = faker.random.numeric(9);
-            let cpf = "747-474-747-47";
+            let cpf = '747-7474-747-88';
             let estado = 'BA';
             let cidade = faker.address.cityName();
+            let pcdboolean = false;
             let idFormulario;
+            formulario.formularioCadastro(formBody)
 
             formulario.formularioCadastro(formBody)
                 .then((response) => {
                     idFormulario = response.body.idFormulario
-                    candidato.candidatoCadastro(nome, genero, email, telefone, rg, cpf, estado, cidade, idFormulario)
+                    candidato.candidatoCadastro(nome, dataNascimento, email, telefone, rg, cpf, estado, cidade, pcdboolean, idFormulario)
                         .then((response) => {
                             expect(response.status).to.eq(400)
                             expect(response.body.errors).to.contain("cpf: invalid Brazilian individual taxpayer registry number (CPF)")
@@ -144,19 +148,20 @@ context('Candidado', () => {
                 .story('Nome menor que 3 caracteres');
 
             let nome = 'Al';
-            let genero = 'Masculino';
-            let email = faker.internet.email();
+            let dataNascimento = "2022-11-30";
+            let email = `${faker.name.firstName()}.${faker.name.lastName()}@dbccompany.com.br`;
             let telefone = faker.random.numeric(9);
             let rg = faker.random.numeric(9);
             let cpf = candidato.gerarCPF();
             let estado = 'BA';
             let cidade = faker.address.cityName();
+            let pcdboolean = false;
             let idFormulario;
 
             formulario.formularioCadastro(formBody)
                 .then((response) => {
                     idFormulario = response.body.idFormulario
-                    candidato.candidatoCadastro(nome, genero, email, telefone, rg, cpf, estado, cidade, idFormulario)
+                    candidato.candidatoCadastro(nome, dataNascimento, email, telefone, rg, cpf, estado, cidade, pcdboolean, idFormulario)
                         .then((response) => {
                             expect(response.status).to.eq(400)
                             expect(response.body.errors).to.contain("nome: O nome deve ter de 3 a 255 caracteres")
@@ -177,18 +182,19 @@ context('Candidado', () => {
                 .story('Todos os dados corretos');
 
             let nome = faker.name.firstName();
-            let genero = 'Masculino';
-            let email = faker.internet.email();
+            let dataNascimento = "2022-11-30";
+            let email = `${faker.name.firstName()}.${faker.name.lastName()}@dbccompany.com.br`;
             let telefone = faker.random.numeric(9);
             let rg = faker.random.numeric(9);
             let cpf = candidato.gerarCPF();
             let estado = 'BA';
             let cidade = faker.address.cityName();
+            let pcdboolean = false;
             let idFormulario;
             formulario.formularioCadastro(formBody)
                 .then((response) => {
                     idFormulario = response.body.idFormulario
-                    candidato.candidatoCadastro(nome, genero, email, telefone, rg, cpf, estado, cidade, idFormulario)
+                    candidato.candidatoCadastro(nome, dataNascimento, email, telefone, rg, cpf, estado, cidade, pcdboolean, idFormulario)
                         .then((response) => {
                             expect(response.status).to.eq(200)
                             expect(response.body.nome).to.eq(nome)
@@ -250,31 +256,34 @@ context('Candidado', () => {
                 .story('Todos os dados corretos');
 
             let nome = faker.name.firstName();
-            let genero = 'Masculino';
-            let email = faker.internet.email();
+            let dataNascimento = "2022-11-30";
+            let email = `${faker.name.firstName()}.${faker.name.lastName()}@dbccompany.com.br`;
             let telefone = faker.random.numeric(9);
             let rg = faker.random.numeric(9);
             let cpf = candidato.gerarCPF();
             let estado = 'BA';
             let cidade = faker.address.cityName();
+            let pcdboolean = false;
             let idFormulario;
             formulario.formularioCadastro(formBody)
                 .then((response) => {
                     idFormulario = response.body.idFormulario
-                    candidato.candidatoCadastro(nome, genero, email, telefone, rg, cpf, estado, cidade, idFormulario)
+                    candidato.candidatoCadastro(nome, dataNascimento, email, telefone, rg, cpf, estado, cidade, pcdboolean, idFormulario)
                         .then((response) => {
                             expect(response.status).to.eq(200)
                             expect(response.body.nome).to.eq(nome)
-                            candidato.candidatoAtualizar(response.body.idCandidato,
+                            candidato.candidatoAtualizar(
+                                    response.body.idCandidato,
                                     faker.name.firstName(),
-                                    'Feminino',
+                                    "2022-11-30",
                                     faker.internet.email(),
                                     faker.random.numeric(9),
                                     faker.random.numeric(9),
                                     candidato.gerarCPF(),
                                     'MA',
                                     faker.address.cityName(),
-                                    474
+                                    false,
+                                    idFormulario
                                 )
                                 .then((response) => {
                                     expect(response.status).to.eq(200)
@@ -299,18 +308,19 @@ context('Candidado', () => {
                 .story('Todos os dados vazios');
 
             let nome = faker.name.firstName();
-            let genero = 'Masculino';
-            let email = faker.internet.email();
+            let dataNascimento = "2022-11-30";
+            let email = `${faker.name.firstName()}.${faker.name.lastName()}@dbccompany.com.br`;
             let telefone = faker.random.numeric(9);
             let rg = faker.random.numeric(9);
             let cpf = candidato.gerarCPF();
             let estado = 'BA';
             let cidade = faker.address.cityName();
+            let pcdboolean = false;
             let idFormulario;
             formulario.formularioCadastro(formBody)
                 .then((response) => {
                     idFormulario = response.body.idFormulario
-                    candidato.candidatoCadastro(nome, genero, email, telefone, rg, cpf, estado, cidade, idFormulario)
+                    candidato.candidatoCadastro(nome, dataNascimento, email, telefone, rg, cpf, estado, cidade, pcdboolean, idFormulario)
                         .then((response) => {
                             expect(response.status).to.eq(200)
                             expect(response.body.nome).to.eq(nome)
@@ -337,18 +347,19 @@ context('Candidado', () => {
                 .story('ID inexistente');
 
             let nome = faker.name.firstName();
-            let genero = 'Masculino';
-            let email = faker.internet.email();
+            let dataNascimento = "2022-11-30";
+            let email = `${faker.name.firstName()}.${faker.name.lastName()}@dbccompany.com.br`;
             let telefone = faker.random.numeric(9);
             let rg = faker.random.numeric(9);
             let cpf = candidato.gerarCPF();
             let estado = 'BA';
             let cidade = faker.address.cityName();
+            let pcdboolean = false;
             let idFormulario;
             formulario.formularioCadastro(formBody)
                 .then((response) => {
                     idFormulario = response.body.idFormulario
-                    candidato.candidatoCadastro(nome, genero, email, telefone, rg, cpf, estado, cidade, idFormulario)
+                    candidato.candidatoCadastro(nome, dataNascimento, email, telefone, rg, cpf, estado, cidade, pcdboolean, idFormulario)
                         .then((response) => {
                             expect(response.status).to.eq(200)
                             expect(response.body.nome).to.eq(nome)
@@ -385,18 +396,19 @@ context('Candidado', () => {
                 .story('Preechendo nome inválido');
 
             let nome = faker.name.firstName();
-            let genero = 'Masculino';
-            let email = faker.internet.email();
+            let dataNascimento = "2022-11-30";
+            let email = `${faker.name.firstName()}.${faker.name.lastName()}@dbccompany.com.br`;
             let telefone = faker.random.numeric(9);
             let rg = faker.random.numeric(9);
             let cpf = candidato.gerarCPF();
             let estado = 'BA';
             let cidade = faker.address.cityName();
+            let pcdboolean = false;
             let idFormulario;
             formulario.formularioCadastro(formBody)
                 .then((response) => {
                     idFormulario = response.body.idFormulario
-                    candidato.candidatoCadastro(nome, genero, email, telefone, rg, cpf, estado, cidade, idFormulario)
+                    candidato.candidatoCadastro(nome, dataNascimento, email, telefone, rg, cpf, estado, cidade, pcdboolean, idFormulario)
                         .then((response) => {
                             expect(response.status).to.eq(200)
                             expect(response.body.nome).to.eq(nome)

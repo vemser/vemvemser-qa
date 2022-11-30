@@ -119,18 +119,16 @@ context('Formulário', () => {
                 .then((response) => {
                     expect(response.status).to.eq(200)
                     idForm = (response.body.idFormulario)
-                    cy.wrap(idForm).as('idFormulario')
+                    formulario.formularioAtualizar(idForm, formBody)
+                        .then((response) => {
+                            expect(response.status).to.eq(200)
+                            formulario.formularioDelete(response.body.idFormulario)
+                                .then((response) => {
+                                    expect(response.status).to.eq(200)
+                                })
+                        })
                 })
-            cy.get('@idFormulario').then((id) => {
-                cy.atualizaFormulario(id, formBody)
-                    .then((response) => {
-                        expect(response.status).to.eq(200)
-                        formulario.formularioDelete(response.body.idFormulario)
-                            .then((response) => {
-                                expect(response.status).to.eq(200)
-                            })
-                    })
-            })
+
         });
 
         it('PUT - Tentar atualizar formulários com campos vazios', () => {
@@ -143,18 +141,16 @@ context('Formulário', () => {
                 .then((response) => {
                     expect(response.status).to.eq(200)
                     idForm = (response.body.idFormulario)
-                    cy.wrap(idForm).as('idFormulario')
+                    formulario.formularioAtualizar(idForm, formVazio)
+                        .then((response) => {
+                            expect(response.status).to.be.oneOf([500, 400])
+                            formulario.formularioDelete(idForm)
+                                .then((response) => {
+                                    expect(response.status).to.eq(200)
+                                })
+                        })
+
                 })
-            cy.get('@idFormulario').then((id) => {
-                cy.atualizaFormulario(id, formVazio)
-                    .then((response) => {
-                        expect(response.status).to.be.oneOf([500, 400])
-                        formulario.formularioDelete(id)
-                            .then((response) => {
-                                expect(response.status).to.eq(200)
-                            })
-                    })
-            })
         });
 
         it('PUT - Tentar atualizar formulário com campos inválidos', () => {
@@ -167,18 +163,15 @@ context('Formulário', () => {
                 .then((response) => {
                     expect(response.status).to.eq(200)
                     idForm = (response.body.idFormulario)
-                    cy.wrap(idForm).as('idFormulario')
+                    formulario.formularioAtualizar(idForm, formNull)
+                        .then((response) => {
+                            expect(response.status).to.be.oneOf([500, 400])
+                            formulario.formularioDelete(idForm)
+                                .then((response) => {
+                                    expect(response.status).to.eq(200)
+                                })
+                        })
                 })
-            cy.get('@idFormulario').then((id) => {
-                cy.atualizaFormulario(id, formNull)
-                    .then((response) => {
-                        expect(response.status).to.be.oneOf([500, 400])
-                        formulario.formularioDelete(id)
-                            .then((response) => {
-                                expect(response.status).to.eq(200)
-                            })
-                    })
-            })
         });
 
         it('PUT - Tentar atualizar formulário com ID inexistente', () => {
@@ -191,18 +184,15 @@ context('Formulário', () => {
                 .then((response) => {
                     expect(response.status).to.eq(200)
                     idForm = (response.body.idFormulario)
-                    cy.wrap(idForm).as('idFormulario')
+                    formulario.formularioAtualizar(0, formBody)
+                        .then((response) => {
+                            expect(response.status).to.be.oneOf([500, 400])
+                            formulario.formularioDelete(idForm)
+                                .then((response) => {
+                                    expect(response.status).to.eq(200)
+                                })
+                        })
                 })
-            cy.get('@idFormulario').then((id) => {
-                cy.atualizaFormulario(0, formBody)
-                    .then((response) => {
-                        expect(response.status).to.be.oneOf([500, 400])
-                        formulario.formularioDelete(id)
-                            .then((response) => {
-                                expect(response.status).to.eq(200)
-                            })
-                    })
-            })
         });
 
         it('PUT - Tentar atualizar formulário com ID inválido', () => {
@@ -215,18 +205,15 @@ context('Formulário', () => {
                 .then((response) => {
                     expect(response.status).to.eq(200)
                     idForm = (response.body.idFormulario)
-                    cy.wrap(idForm).as('idFormulario')
+                    formulario.formularioAtualizar(NaN, formBody)
+                        .then((response) => {
+                            expect(response.status).to.be.oneOf([500, 400])
+                            formulario.formularioDelete(idForm)
+                                .then((response) => {
+                                    expect(response.status).to.eq(200)
+                                })
+                        })
                 })
-            cy.get('@idFormulario').then((id) => {
-                cy.atualizaFormulario(NaN, formBody)
-                    .then((response) => {
-                        expect(response.status).to.be.oneOf([500, 400])
-                        formulario.formularioDelete(id)
-                            .then((response) => {
-                                expect(response.status).to.eq(200)
-                            })
-                    })
-            })
         });
     })
 
@@ -251,11 +238,11 @@ context('Formulário', () => {
 
             formulario.formularioListarTodos(NaN, NaN, 'idFormulario', NaN)
                 .then((response) => {
-                    expect(response.status).to.be.oneOf([500, 400])
+                    expect(response.status).to.eq(200)
                 })
         });
 
-        it('GET - Tentar listar todos os formulários se, passar queries', () => {
+        it('GET - Tentar listar todos os formulários sem, passar queries', () => {
             cy.allure()
                 .epic('Formulário')
                 .feature('Listar todos os formulários')
@@ -263,7 +250,7 @@ context('Formulário', () => {
 
             formulario.formularioListarTodos()
                 .then((response) => {
-                    expect(response.status).to.be.oneOf([500, 400])
+                    expect(response.status).to.eq(200)
                 })
         });
     })

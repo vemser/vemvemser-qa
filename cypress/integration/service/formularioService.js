@@ -1,17 +1,20 @@
 const baseUrl = Cypress.env('API_BASE');
 
+import {
+    token
+} from "../../support/commands";
 export let idForm;
 export default class Formulario {
 
     formularioCadastro(payload) {
         return cy.request({
             method: 'POST',
-            url: `${baseUrl}/formulario`,
+            url: `${baseUrl}/formulario/cadastro`,
             headers: {
-                'Content-Type': 'application/json',
-                Authorization: `Bearer ${token}`
+                Authorization: token,
+                'Content-Type': 'application/json'
             },
-            qs: payload,
+            body: payload,
             failOnStatusCode: false
         })
     }
@@ -65,20 +68,19 @@ export default class Formulario {
     }
 
     formularioAtualizar(idFormulario, payload) {
-        cy.request({
-                method: 'PUT',
-                url: `${baseUrl}/formulario`,
-                headers: {
-                    'Content-Type': 'application/json',
-                    Authorization: `Bearer ${token}`
-                },
-                qs: {
-                    "idFormulario": idFormulario
-                },
-                body: payload,
-                failOnStatusCode: false
-            })
-            .as('response').get('@response')
+        return cy.request({
+            method: 'PUT',
+            url: `${baseUrl}/formulario`,
+            headers: {
+                'Content-Type': 'application/json',
+                Authorization: `Bearer ${token}`
+            },
+            qs: {
+                "idFormulario": idFormulario
+            },
+            body: payload,
+            failOnStatusCode: false
+        })
     }
 
 }

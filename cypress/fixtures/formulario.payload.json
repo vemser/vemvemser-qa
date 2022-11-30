@@ -14,9 +14,11 @@
     "ingles": "Avançado",
     "espanhol": "Não possuo",
     "neurodiversidade": "TDAH",
-    "configurações": "T",
+    "configuracoes": "T",
     "efetivacaoBoolean": true,
     "disponibilidadeBoolean": true,
+    "genero": "Mulher Cis",
+    "orientacao": "Heterosexual",
     "trilhas": [
         1
     ],

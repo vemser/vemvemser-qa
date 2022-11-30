@@ -1,26 +1,31 @@
+import {
+    token
+} from "../../support/commands";
+
 const baseUrl = Cypress.env('API_BASE');
-let token = cy.get('@tokenAuthorization');
+
 
 
 export default class Candidato {
 
-    candidatoCadastro(nome, genero, email, telefone, rg, cpf, estado, cidade, idFormulario) {
+    candidatoCadastro(nome, dataNascimento, email, telefone, rg, cpf, estado, cidade, pcdboolean, idFormulario) {
         return cy.request({
             method: 'POST',
             url: `${baseUrl}/candidato/cadastro`,
             headers: {
-                'Content-Type': 'application/json',
-                Authorization: `Bearer ${token}`
+                Authorization: token,
+                'Content-Type': 'application/json'
             },
             body: {
                 "nome": nome,
-                "genero": genero,
+                "dataNascimento": dataNascimento,
                 "email": email,
                 "telefone": telefone,
                 "rg": rg,
                 "cpf": cpf,
                 "estado": estado,
                 "cidade": cidade,
+                "pcdboolean": pcdboolean,
                 "idFormulario": idFormulario
             },
             failOnStatusCode: false
@@ -36,13 +41,13 @@ export default class Candidato {
             },
             headers: {
                 'Content-Type': 'application/json',
-                Authorization: `Bearer ${token}`
+                Authorization: token
             },
             failOnStatusCode: false
         })
     }
 
-    candidatoAtualizar(idCandidato, nome, genero, email, telefone, rg, cpf, estado, cidade, idFormulario) {
+    candidatoAtualizar(idCandidato, nome, dataNascimento, email, telefone, rg, cpf, estado, cidade, pcdboolean, idFormulario) {
         return cy.request({
             method: 'PUT',
             url: `${baseUrl}/candidato/update`,
@@ -50,18 +55,19 @@ export default class Candidato {
                 "idCandidato": idCandidato
             },
             headers: {
-                'Content-Type': 'application/json',
-                Authorization: `Bearer ${token}`
+                Authorization: token,
+                'Content-Type': 'application/json'
             },
             body: {
                 "nome": nome,
-                "genero": genero,
+                "dataNascimento": dataNascimento,
                 "email": email,
                 "telefone": telefone,
                 "rg": rg,
                 "cpf": cpf,
                 "estado": estado,
                 "cidade": cidade,
+                "pcdboolean": pcdboolean,
                 "idFormulario": idFormulario
             },
             failOnStatusCode: false
@@ -73,7 +79,7 @@ export default class Candidato {
             url: `${baseUrl}/candidato/listar`,
             headers: {
                 'Content-Type': 'application/json',
-                Authorization: `Bearer ${token}`
+                Authorization: token
             },
             failOnStatusCode: false
         })
