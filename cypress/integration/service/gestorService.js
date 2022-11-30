@@ -1,8 +1,5 @@
 const baseUrl = Cypress.env('API_BASE');
 let token = 0;
-import {
-    faker
-} from '@faker-js/faker';
 export default class Gestor {
 
     gestorRequest() {
@@ -12,6 +9,22 @@ export default class Gestor {
             headers: {
                 'Content-Type': 'application/json',
                 Authorization: `Bearer ${token}`
+            },
+            failOnStatusCode: false
+        })
+    }
+
+    gestorLogar(email, senha) {
+        return cy.request({
+            method: 'POST',
+            url: `${baseUrl}/Gestor`,
+            headers: {
+                'Content-Type': 'application/json',
+                Authorization: `Bearer ${token}`
+            },
+            body: {
+                "email": email,
+                "senha": senha
             },
             failOnStatusCode: false
         })

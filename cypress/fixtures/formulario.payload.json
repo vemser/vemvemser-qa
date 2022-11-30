@@ -1,0 +1,24 @@
+{
+    "matriculadoBoolean": true,
+    "curso": "Sistema de informações",
+    "turno": "NOITE",
+    "instituicao": "FAE",
+    "github": "https://github.com/link-github",
+    "desafiosBoolean": false,
+    "problemaBoolean": false,
+    "reconhecimentoBoolean": false,
+    "altruismoBoolean": false,
+    "resposta": "Outro",
+    "lgpdBoolean": false,
+    "provaBoolean": false,
+    "ingles": "Avançado",
+    "espanhol": "Não possuo",
+    "neurodiversidade": "TDAH",
+    "configurações": "T",
+    "efetivacaoBoolean": true,
+    "disponibilidadeBoolean": true,
+    "trilhas": [
+        1
+    ],
+    "linkedin": "string"
+}
