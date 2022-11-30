@@ -1,6 +1,4 @@
 const baseUrl = Cypress.env('API_BASE');
-let token = 0;
-
 
 export let idForm;
 export default class Formulario {

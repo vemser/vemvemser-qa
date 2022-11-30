@@ -16,8 +16,8 @@ context('Gestor', () => {
             gestor.gestorRequest()
                 .then((response) => {
                     expect(response.status).to.eq(200);
-                    expect(response.body[0]).to.have.property('nome');
-                    expect(response.body[0]).to.have.property('idGestor');
+                    expect(response.body.elementos[0]).to.have.property('nome');
+                    expect(response.body.elementos[0]).to.have.property('idGestor');
                 })
         });
     })
@@ -31,7 +31,7 @@ context('Gestor', () => {
 
             //Gerando novos dados
             let nome = faker.name.firstName();
-            let email = faker.internet.email();
+            let email = `${faker.name.lastName()}.${faker.name.firstName()}@dbccompany.com.br`;
             let senha = faker.internet.password();
             let tipoCargo = 1;
 
@@ -86,7 +86,8 @@ context('Gestor', () => {
 
             //Gerando novos dados
             let nome = 10;
-            let email = faker.internet.email();
+            let email = `${faker.name.lastName()}.${faker.name.firstName()}@dbccompany.com.br`;
+
             let senha = faker.internet.password();
             let tipoCargo = 1;
 
@@ -105,7 +106,8 @@ context('Gestor', () => {
 
             //Gerando novos dados
             let nome = 'Al';
-            let email = faker.internet.email();
+            let email = `${faker.name.lastName()}.${faker.name.firstName()}@dbccompany.com.br`;
+
             let senha = faker.internet.password();
             let tipoCargo = 1;
 
@@ -129,7 +131,7 @@ context('Gestor', () => {
 
             gestor.gestorCadastro(nome, email, senha, tipoCargo)
                 .then((response) => {
-                    expect(response.status).to.eq(500);
+                    expect(response.status).to.be.oneOf([400, 500]);
                 })
         });
     })
@@ -144,7 +146,8 @@ context('Gestor', () => {
 
             //Criando um novo gestor
             let nome = faker.name.firstName();
-            let email = faker.internet.email();
+            let email = `${faker.name.lastName()}.${faker.name.firstName()}@dbccompany.com.br`;
+
             let senha = faker.internet.password();
             let tipoCargo = 1;
             gestor.gestorCadastro(nome, email, senha, tipoCargo)
@@ -196,7 +199,8 @@ context('Gestor', () => {
 
             //Criando um gestor
             let nome = faker.name.firstName();
-            let email = faker.internet.email();
+            let email = `${faker.name.lastName()}.${faker.name.firstName()}@dbccompany.com.br`;
+
             let senha = faker.internet.password();
             let tipoCargo = 1;
             gestor.gestorCadastro(nome, email, senha, tipoCargo)
@@ -206,7 +210,8 @@ context('Gestor', () => {
 
                     //Gerando novos dados para atualizar
                     nome = faker.name.firstName();
-                    email = faker.internet.email();
+                    let email = `${faker.name.lastName()}.${faker.name.firstName()}@dbccompany.com.br`;
+
                     senha = faker.internet.password();
                     tipoCargo = 1;
                     gestor.gestorAtualizar(idCriado, nome, email, senha, tipoCargo)
@@ -230,7 +235,8 @@ context('Gestor', () => {
 
 
             let nome = faker.name.firstName();
-            let email = faker.internet.email();
+            let email = `${faker.name.lastName()}.${faker.name.firstName()}@dbccompany.com.br`;
+
             let senha = faker.internet.password();
             let tipoCargo = 1;
             gestor.gestorAtualizar(0, nome, email, senha, tipoCargo)
@@ -246,7 +252,8 @@ context('Gestor', () => {
                 .story('Passando dados vazios')
 
             let nome = faker.name.firstName();
-            let email = faker.internet.email();
+            let email = `${faker.name.lastName()}.${faker.name.firstName()}@dbccompany.com.br`;
+
             let senha = faker.internet.password();
             let tipoCargo = 1;
             gestor.gestorCadastro(nome, email, senha, tipoCargo)

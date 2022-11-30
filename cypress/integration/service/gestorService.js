@@ -1,14 +1,20 @@
+import {
+    token
+} from "../../support/commands";
+
 const baseUrl = Cypress.env('API_BASE');
-let token = 0;
 export default class Gestor {
 
     gestorRequest() {
         return cy.request({
             method: 'GET',
-            url: `${baseUrl}/Gestor`,
+            url: `${baseUrl}/gestor`,
+            qs: {
+
+            },
             headers: {
-                'Content-Type': 'application/json',
-                Authorization: `Bearer ${token}`
+                Authorization: token,
+                'Content-Type': 'application/json'
             },
             failOnStatusCode: false
         })
@@ -33,10 +39,10 @@ export default class Gestor {
     gestorCadastro(nome, email, senha, tipoCargo) {
         return cy.request({
             method: 'POST',
-            url: `${baseUrl}/Gestor/cadastro`,
+            url: `${baseUrl}/gestor/cadastro`,
             headers: {
+                Authorization: token,
                 'Content-Type': 'application/json',
-                Authorization: `Bearer ${token}`
             },
             body: {
                 "nome": nome,
@@ -51,7 +57,7 @@ export default class Gestor {
     gestorCadastroSemPayload() {
         return cy.request({
             method: 'POST',
-            url: `${baseUrl}/Gestor/cadastro`,
+            url: `${baseUrl}/gestor/cadastro`,
             headers: {
                 'Content-Type': 'application/json',
                 Authorization: `Bearer ${token}`
@@ -63,7 +69,7 @@ export default class Gestor {
     gestorDeletar(id) {
         return cy.request({
             method: 'DELETE',
-            url: `${baseUrl}/Gestor/${id}`,
+            url: `${baseUrl}/gestor/${id}`,
             headers: {
                 'Content-Type': 'application/json',
                 Authorization: `Bearer ${token}`
@@ -75,7 +81,7 @@ export default class Gestor {
     gestorAtualizar(id, nome, email, senha, tipoCargo) {
         return cy.request({
             method: 'PUT',
-            url: `${baseUrl}/Gestor/${id}`,
+            url: `${baseUrl}/gestor/${id}`,
             headers: {
                 'Content-Type': 'application/json',
                 Authorization: `Bearer ${token}`

@@ -1,5 +1,5 @@
 const baseUrl = Cypress.env('API_BASE');
-let token = 0;
+let token = cy.get('@tokenAuthorization');
 
 
 export default class Candidato {

@@ -1,5 +1,12 @@
+import "cypress-localstorage-commands";
+
+export let token;
 before(() => {
-  //cy.login();
+  cy.login();
+  cy.saveLocalStorage();
+  cy.getLocalStorage("token").then((response) => {
+    token = response;
+  });
 });
 
 const baseUrl = Cypress.env('API_BASE');
@@ -35,4 +42,23 @@ Cypress.Commands.add("atualizaFormulario", (idFormulario, payload) => {
       failOnStatusCode: false
     })
     .as('response').get('@response')
+})
+
+Cypress.Commands.add('login', () => {
+  cy.request({
+      method: 'POST',
+      url: `${baseUrl}/auth/login`,
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: {
+        "email": "admin@dbccompany.com.br",
+        "senha": "123"
+      },
+      failOnStatusCode: false
+    })
+    .its("body")
+    .then((response) => {
+      cy.setLocalStorage("token", response.token)
+    })
 })
