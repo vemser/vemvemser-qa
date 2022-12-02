@@ -55,7 +55,7 @@ context('Candidado', () => {
                                     expect(response.status).to.eq(200)
                                 })
                         })
-                    formulario.formularioDelete(response.body.idFormulario)
+                    formulario.formularioDelete(idFormulario)
                         .then((response) => {
                             expect(response.status).to.eq(200)
                         })

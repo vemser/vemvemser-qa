@@ -1,29 +1,33 @@
+import {
+    token
+} from "../../support/commands";
+
 const baseUrl = Cypress.env('API_BASE');
-let token = 0;
 
 export default class Inscricao {
 
-    inscricaoCriar(idFormulario, idCandidato, avaliacao) {
-        cy.request({
+    inscricaoCriar(idCandidato) {
+        return cy.request({
             method: 'POST',
-            url: `${baseUrl}/inscricao`,
+            url: `${baseUrl}/inscricao/cadastro`,
             headers: {
                 'Content-Type': 'application/json',
                 Authorization: `Bearer ${token}`
             },
             body: {
-                "idFormulario": idFormulario,
                 "idCandidato": idCandidato,
-                "avaliacao": avaliacao
             },
             failOnStatusCode: false
         });
     }
 
     inscricaoDeletar(idInscricao) {
-        cy.request({
+        return cy.request({
             method: 'DELETE',
-            url: `${baseUrl}/inscricao/${idInscricao}`,
+            url: `${baseUrl}/inscricao`,
+            qs: {
+                "id-inscricao": idInscricao
+            },
             headers: {
                 'Content-Type': 'application/json',
                 Authorization: `Bearer ${token}`
@@ -33,7 +37,7 @@ export default class Inscricao {
     }
 
     inscricaoListarTodas() {
-        cy.request({
+        return cy.request({
             method: 'GET',
             url: `${baseUrl}/inscricao`,
             headers: {
@@ -44,10 +48,13 @@ export default class Inscricao {
         });
     }
 
-    inscricaoListarIndividual(idInscricao) {
-        cy.request({
+    inscricaoListarPorId(idInscricao) {
+        return cy.request({
             method: 'GET',
-            url: `${baseUrl}/inscricao/${idInscricao}`,
+            url: `${baseUrl}/inscricao/by-id`,
+            qs: {
+                "id": idInscricao
+            },
             headers: {
                 'Content-Type': 'application/json',
                 Authorization: `Bearer ${token}`
@@ -55,19 +62,16 @@ export default class Inscricao {
             failOnStatusCode: false
         });
     }
-
-    inscricaoAtualizart(idInscricao, idFormulario, idCandidato, avaliacao) {
-        cy.request({
-            method: 'PUT',
-            url: `${baseUrl}/inscricao/${idInscricao}`,
+    buscarPorEmail(email) {
+        return cy.request({
+            method: 'GET',
+            url: `${baseUrl}/inscricao/buscar-by-email`,
+            qs: {
+                "email": email
+            },
             headers: {
                 'Content-Type': 'application/json',
                 Authorization: `Bearer ${token}`
-            },
-            body: {
-                "idFormulario": idFormulario,
-                "idCandidato": idCandidato,
-                "avaliacao": avaliacao
             },
             failOnStatusCode: false
         });

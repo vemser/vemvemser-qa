@@ -75,9 +75,7 @@ context('Formulário', () => {
                 .story('Todos os dados corretos')
 
             //criando um novo formulário
-            formulario.formularioCadastro(
-                    formBody
-                )
+            formulario.formularioCadastro(formBody)
                 .then((response) => {
                     expect(response.status).to.eq(200)
                     formulario.formularioDelete(response.body.idFormulario)
@@ -268,10 +266,10 @@ context('Formulário', () => {
                     formulario.formularioListarIndividual(response.body.idFormulario)
                         .then((response) => {
                             expect(response.status).to.eq(200)
-                            formulario.formularioDelete(response.body.idFormulario)
-                                .then((response) => {
-                                    expect(response.status).to.eq(200)
-                                })
+                        })
+                    formulario.formularioDelete(response.body.idFormulario)
+                        .then((response) => {
+                            expect(response.status).to.eq(200)
                         })
                 })
         });
