@@ -53,7 +53,25 @@ Cypress.Commands.add('login', () => {
       },
       body: {
         "email": "admin@dbccompany.com.br",
-        "senha": "123"
+        "senha": "admin123"
+      },
+      failOnStatusCode: false
+    })
+    .its("body")
+    .then((response) => {
+      cy.setLocalStorage("token", response.token)
+    })
+})
+Cypress.Commands.add('loginColaborador', () => {
+  cy.request({
+      method: 'POST',
+      url: `${baseUrl}/auth/login`,
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: {
+        "email": "colab@dbccompany.com.br",
+        "senha": "Fla@123456"
       },
       failOnStatusCode: false
     })

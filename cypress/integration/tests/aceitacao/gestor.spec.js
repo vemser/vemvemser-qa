@@ -20,6 +20,23 @@ context('Gestor', () => {
                     expect(response.body.elementos[0]).to.have.property('idGestor');
                 })
         });
+
+        context('Listar logado', () => {
+            it('GET - Deve listar o gestor logado', () => {
+                cy.allure()
+                    .epic('Gestor')
+                    .feature('Lista o gestor logado')
+                    .story('Nenhum dado necessário')
+
+                gestor.listarLogado()
+                    .then((response) => {
+                        expect(response.status).to.eq(200);
+                        expect(response.body).to.have.any.keys("idGestor")
+                        expect(response.body).to.have.any.keys("nome")
+                        expect(response.body).to.have.any.keys("email")
+                    })
+            });
+        })
     })
     context('Listar gestor por id', () => {
         it('GET - Deve listar o gestor passando ID', () => {
@@ -87,6 +104,53 @@ context('Gestor', () => {
             gestor.gestorListarPorId(NaN)
                 .then((response) => {
                     expect(response.status).to.eq(400)
+                })
+        });
+    })
+
+    context('Desativação de conta', () => {
+        it('PUT - Deve desativar uma conta', () => {
+            cy.allure()
+                .epic('Gestor')
+                .feature('Desativar uma conta')
+                .story('Todos os dados corretos')
+
+            gestor.gestorCadastro(
+                    faker.name.firstName(),
+                    `${faker.name.lastName()}@dbccompany.com.br`,
+                    "senhaDificil123",
+                    2
+                )
+                .then((response) => {
+                    expect(response.status).to.eq(200);
+                    gestor.desativarConta(response.body.idGestor)
+                        .then((response) => {
+                            expect(response.status).to.eq(200)
+                        })
+                    gestor.gestorDeletar(response.body.idGestor)
+                })
+        });
+
+        it('PUT - Tentar desativar conta inexistente', () => {
+            cy.allure()
+                .epic('Gestor')
+                .feature('Desativar uma conta')
+                .story('Todos os dados corretos')
+
+            gestor.gestorCadastro(
+                    faker.name.firstName(),
+                    `${faker.name.lastName()}@dbccompany.com.br`,
+                    "senhaDificil123",
+                    2
+                )
+                .then((response) => {
+                    expect(response.status).to.eq(200);
+                    let idGestor = response.body.idGestor;
+                    gestor.gestorDeletar(idGestor)
+                    gestor.desativarConta(idGestor)
+                        .then((response) => {
+                            expect(response.status).to.eq(400)
+                        })
                 })
         });
     })

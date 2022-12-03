@@ -122,4 +122,40 @@ export default class Gestor {
             failOnStatusCode: false
         });
     }
+
+    desativarConta(idGestor) {
+        return cy.request({
+            method: 'PUT',
+            url: `${baseUrl}/gestor/desativacao-conta/${idGestor}`,
+            headers: {
+                Authorization: `Bearer ${token}`,
+                'Content-Type': 'application/json'
+            },
+            failOnStatusCode: false
+        });
+    }
+
+    trocarSenha(idGestor) {
+        return cy.request({
+            method: 'PUT',
+            url: `${baseUrl}/gestor/trocar-senha/${idGestor}`,
+            headers: {
+                Authorization: `Bearer ${token}`,
+                'Content-Type': 'application/json'
+            },
+            failOnStatusCode: false
+        });
+    }
+
+    listarLogado() {
+        return cy.request({
+            method: 'GET',
+            url: `${baseUrl}/gestor/gestor-logado`,
+            headers: {
+                Authorization: `Bearer ${token}`,
+                'Content-Type': 'application/json'
+            },
+            failOnStatusCode: false
+        });
+    }
 }
