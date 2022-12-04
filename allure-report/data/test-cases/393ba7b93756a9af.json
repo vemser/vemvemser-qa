@@ -1,0 +1,209 @@
+{
+  "uid" : "393ba7b93756a9af",
+  "name" : "POST - Testar criar candidato nome menor que 3 caracteres",
+  "fullName" : "POST - Testar criar candidato nome menor que 3 caracteres",
+  "historyId" : "d3f0aed2557e5beef890b7f9e9259dce",
+  "time" : {
+    "start" : 1670186918420,
+    "stop" : 1670186920039,
+    "duration" : 1619
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back/formulario/cadastro",
+      "time" : {
+        "start" : 1670186918431,
+        "stop" : 1670186919829,
+        "duration" : 1398
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "POST 400 http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back/candidato/cadastro",
+      "time" : {
+        "start" : 1670186919831,
+        "stop" : 1670186919944,
+        "duration" : 113
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **[ Array(1) ]** to include **nome: O nome deve ter de 3 a 255 caracteres**",
+      "time" : {
+        "start" : 1670186919950,
+        "stop" : 1670186919950,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[\n  \"nome: O nome deve ter de 3 a 255 caracteres\"\n]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **400** to equal **400**",
+      "time" : {
+        "start" : 1670186919950,
+        "stop" : 1670186919950,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "400"
+      }, {
+        "name" : "expected",
+        "value" : "400"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "DELETE 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back/formulario",
+      "time" : {
+        "start" : 1670186919951,
+        "stop" : 1670186920036,
+        "duration" : 85
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **200** to equal **200**",
+      "time" : {
+        "start" : 1670186920039,
+        "stop" : 1670186920039,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Candidado"
+  }, {
+    "name" : "suite",
+    "value" : "Criar candidato"
+  }, {
+    "name" : "epic",
+    "value" : "Candidato"
+  }, {
+    "name" : "feature",
+    "value" : "Adicionar um candidato no banco de dados"
+  }, {
+    "name" : "story",
+    "value" : "Nome menor que 3 caracteres"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "fd038e617a12ffb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670165870931,
+          "stop" : 1670165882450,
+          "duration" : 11519
+        }
+      }, {
+        "uid" : "8c87abdbfaacff34",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670112345544,
+          "stop" : 1670112346263,
+          "duration" : 719
+        }
+      }, {
+        "uid" : "ac556901cfa617ce",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670111471651,
+          "stop" : 1670111471910,
+          "duration" : 259
+        }
+      }, {
+        "uid" : "851bd8aabcd22f9f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670109864645,
+          "stop" : 1670109864979,
+          "duration" : 334
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "393ba7b93756a9af.json",
+  "parameterValues" : [ ]
+}

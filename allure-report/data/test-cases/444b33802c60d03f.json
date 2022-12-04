@@ -1,0 +1,394 @@
+{
+  "uid" : "444b33802c60d03f",
+  "name" : "GET - Deve listar todos os candidatos do banco de dados ",
+  "fullName" : "GET - Deve listar todos os candidatos do banco de dados ",
+  "historyId" : "3dd75d02853b653c808355c191ec6a37",
+  "time" : {
+    "start" : 1670186898652,
+    "stop" : 1670186910311,
+    "duration" : 11659
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login",
+      "time" : {
+        "start" : 1670186895161,
+        "stop" : 1670186897872,
+        "duration" : 2711
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back/auth/login",
+        "time" : {
+          "start" : 1670186895166,
+          "stop" : 1670186897861,
+          "duration" : 2695
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "its .body",
+        "time" : {
+          "start" : 1670186897862,
+          "stop" : 1670186897871,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "setLocalStorage (\"token\"; \"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ2ZW12ZW1zZXIiLCJqdGkiOiIxIiwiQ0FSR09TIjpbIlJPTEVfQURNSU5JU1RSQURPUiJdLCJpYXQiOjE2NzAxODY2NzgsImV4cCI6MTY3MDI3MzA3OH0.8AERxZ2iNcea9yiFF6kMoq5VcgLKH0q7ipMRz9RUBQ8\")",
+        "time" : {
+          "start" : 1670186897872,
+          "stop" : 1670186897872,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "saveLocalStorage",
+      "time" : {
+        "start" : 1670186897872,
+        "stop" : 1670186897872,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "getLocalStorage (\"token\")",
+      "time" : {
+        "start" : 1670186897872,
+        "stop" : 1670186897872,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login",
+      "time" : {
+        "start" : 1670186897875,
+        "stop" : 1670186898640,
+        "duration" : 765
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back/auth/login",
+        "time" : {
+          "start" : 1670186897876,
+          "stop" : 1670186898636,
+          "duration" : 760
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "its .body",
+        "time" : {
+          "start" : 1670186898636,
+          "stop" : 1670186898640,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "setLocalStorage (\"token\"; \"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ2ZW12ZW1zZXIiLCJqdGkiOiIxIiwiQ0FSR09TIjpbIlJPTEVfQURNSU5JU1RSQURPUiJdLCJpYXQiOjE2NzAxODY2ODAsImV4cCI6MTY3MDI3MzA4MH0.SAqzFzye8NNiWaFBC64XCxROSYyoA0fMA_OHWEVHFl0\")",
+        "time" : {
+          "start" : 1670186898640,
+          "stop" : 1670186898640,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "saveLocalStorage",
+      "time" : {
+        "start" : 1670186898640,
+        "stop" : 1670186898640,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "getLocalStorage (\"token\")",
+      "time" : {
+        "start" : 1670186898640,
+        "stop" : 1670186898641,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back/candidato/listar",
+      "time" : {
+        "start" : 1670186898661,
+        "stop" : 1670186910257,
+        "duration" : 11596
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **{ Object (idCandidato, nome, ...) }** to have property **nome**",
+      "time" : {
+        "start" : 1670186910309,
+        "stop" : 1670186910309,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "{\n  \"idCandidato\": 2,\n  \"nome\": \"Daniel Jacon\",\n  \"dataNascimento\": \"2022-11-17\",\n  \"email\": \"danielcamillo2020@gmail.com\",\n  \"telefone\": \"19987657829\",\n  \"rg\": \"149.691.970\",\n  \"cpf\": \"149.691.970-08\",\n  \"estado\": \"SP\",\n  \"cidade\": \"Pirassununga\",\n  \"pcd\": \"F\",\n  \"formulario\": {\n    \"idFormulario\": 2,\n    \"matriculado\": \"T\",\n    \"curso\": \"ADS\",\n    \"turno\": \"MANHA\",\n    \"instituicao\": \"Uninove\",\n    \"github\": \"Aasda\",\n    \"linkedin\": null,\n    \"desafios\": \"T\",\n    \"problema\": \"F\",\n    \"reconhecimento\": \"F\",\n    \"altruismo\": \"F\",\n    \"resposta\": null,\n    \"lgpd\": \"T\",\n    \"prova\": \"T\",\n    \"ingles\": \"iniciante\",\n    \"espanhol\": \"iniciante\",\n    \"neurodiversidade\": null,\n    \"configuracoes\": \"Sim\",\n    \"efetivacao\": \"T\",\n    \"genero\": \"cisgenero\",\n    \"orientacao\": \"homossexual\",\n    \"disponibilidade\": \"T\",\n    \"trilhas\": [\n      {\n        \"idTrilha\": 1,\n        \"nome\": \"BACKEND\"\n      },\n      {\n        \"idTrilha\": 3,\n        \"nome\": \"FRONTEND\"\n      }\n    ]\n  }\n}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **{ Object (idCandidato, nome, ...) }** to have property **idCandidato**",
+      "time" : {
+        "start" : 1670186910310,
+        "stop" : 1670186910310,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "{\n  \"idCandidato\": 2,\n  \"nome\": \"Daniel Jacon\",\n  \"dataNascimento\": \"2022-11-17\",\n  \"email\": \"danielcamillo2020@gmail.com\",\n  \"telefone\": \"19987657829\",\n  \"rg\": \"149.691.970\",\n  \"cpf\": \"149.691.970-08\",\n  \"estado\": \"SP\",\n  \"cidade\": \"Pirassununga\",\n  \"pcd\": \"F\",\n  \"formulario\": {\n    \"idFormulario\": 2,\n    \"matriculado\": \"T\",\n    \"curso\": \"ADS\",\n    \"turno\": \"MANHA\",\n    \"instituicao\": \"Uninove\",\n    \"github\": \"Aasda\",\n    \"linkedin\": null,\n    \"desafios\": \"T\",\n    \"problema\": \"F\",\n    \"reconhecimento\": \"F\",\n    \"altruismo\": \"F\",\n    \"resposta\": null,\n    \"lgpd\": \"T\",\n    \"prova\": \"T\",\n    \"ingles\": \"iniciante\",\n    \"espanhol\": \"iniciante\",\n    \"neurodiversidade\": null,\n    \"configuracoes\": \"Sim\",\n    \"efetivacao\": \"T\",\n    \"genero\": \"cisgenero\",\n    \"orientacao\": \"homossexual\",\n    \"disponibilidade\": \"T\",\n    \"trilhas\": [\n      {\n        \"idTrilha\": 1,\n        \"nome\": \"BACKEND\"\n      },\n      {\n        \"idTrilha\": 3,\n        \"nome\": \"FRONTEND\"\n      }\n    ]\n  }\n}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **{ Object (idCandidato, nome, ...) }** to have property **email**",
+      "time" : {
+        "start" : 1670186910310,
+        "stop" : 1670186910310,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "{\n  \"idCandidato\": 2,\n  \"nome\": \"Daniel Jacon\",\n  \"dataNascimento\": \"2022-11-17\",\n  \"email\": \"danielcamillo2020@gmail.com\",\n  \"telefone\": \"19987657829\",\n  \"rg\": \"149.691.970\",\n  \"cpf\": \"149.691.970-08\",\n  \"estado\": \"SP\",\n  \"cidade\": \"Pirassununga\",\n  \"pcd\": \"F\",\n  \"formulario\": {\n    \"idFormulario\": 2,\n    \"matriculado\": \"T\",\n    \"curso\": \"ADS\",\n    \"turno\": \"MANHA\",\n    \"instituicao\": \"Uninove\",\n    \"github\": \"Aasda\",\n    \"linkedin\": null,\n    \"desafios\": \"T\",\n    \"problema\": \"F\",\n    \"reconhecimento\": \"F\",\n    \"altruismo\": \"F\",\n    \"resposta\": null,\n    \"lgpd\": \"T\",\n    \"prova\": \"T\",\n    \"ingles\": \"iniciante\",\n    \"espanhol\": \"iniciante\",\n    \"neurodiversidade\": null,\n    \"configuracoes\": \"Sim\",\n    \"efetivacao\": \"T\",\n    \"genero\": \"cisgenero\",\n    \"orientacao\": \"homossexual\",\n    \"disponibilidade\": \"T\",\n    \"trilhas\": [\n      {\n        \"idTrilha\": 1,\n        \"nome\": \"BACKEND\"\n      },\n      {\n        \"idTrilha\": 3,\n        \"nome\": \"FRONTEND\"\n      }\n    ]\n  }\n}"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **200** to equal **200**",
+      "time" : {
+        "start" : 1670186910310,
+        "stop" : 1670186910310,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Candidado"
+  }, {
+    "name" : "suite",
+    "value" : "Listar candidatos"
+  }, {
+    "name" : "epic",
+    "value" : "Candidato"
+  }, {
+    "name" : "feature",
+    "value" : "Lista todos os candidatos no banco de dados"
+  }, {
+    "name" : "story",
+    "value" : "Nenhum dado necessário"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "b98c57ce28909b4a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670165833091,
+          "stop" : 1670165835749,
+          "duration" : 2658
+        }
+      }, {
+        "uid" : "70166b23e236db0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670112331706,
+          "stop" : 1670112336449,
+          "duration" : 4743
+        }
+      }, {
+        "uid" : "ad4da767e6bd3cbf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670111470329,
+          "stop" : 1670111470462,
+          "duration" : 133
+        }
+      }, {
+        "uid" : "22a2f2ac02c27e67",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670109852498,
+          "stop" : 1670109853765,
+          "duration" : 1267
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "444b33802c60d03f.json",
+  "parameterValues" : [ ]
+}

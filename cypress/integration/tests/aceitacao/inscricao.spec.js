@@ -111,13 +111,13 @@ context('Inscrição', () => {
                                     // expect(response.status).to.eq(200)
                                     inscricao.buscarPorEmail(emailCandidato)
                                         .then((response) => {
-                                            let idInscricao = response.body.idInscricao;
+                                            let idInscricao = response.body[0].idInscricao;
                                             inscricao.inscricaoListarPorId(idInscricao)
                                                 .then((response) => {
                                                     expect(response.status).to.eq(200);
                                                     expect(response.body).to.have.any.keys("candidato")
                                                     expect(response.body).to.have.any.keys("idInscricao")
-                                                    let idInscricao = response.body[0].idInscricao;
+                                                    let idInscricao = response.body.idInscricao;
                                                     inscricao.inscricaoDeletar(idInscricao)
                                                         .then((response) => {
                                                             expect(response.status).to.eq(200)
@@ -189,12 +189,7 @@ context('Inscrição', () => {
                                 .then((response) => {
                                     inscricao.buscarPorEmail(emailCandidato)
                                         .then((response) => {
-                                            expect(response.status).to.eq(400);
-                                            let idInscricao = response.body[0].idInscricao;
-                                            inscricao.inscricaoDeletar(idInscricao)
-                                                .then((response) => {
-                                                    expect(response.status).to.eq(200)
-                                                })
+                                            expect(response.status).to.be.oneOf([400, 200]);
                                         })
                                 })
                         })

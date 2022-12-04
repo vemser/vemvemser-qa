@@ -1,0 +1,176 @@
+{
+  "uid" : "1147487df19155b5",
+  "name" : "DELETE - Deve deletar um formulário do banco de dados",
+  "fullName" : "DELETE - Deve deletar um formulário do banco de dados",
+  "historyId" : "a2458667487aa6cc41a8445fb0f0108c",
+  "time" : {
+    "start" : 1670186950430,
+    "stop" : 1670186950689,
+    "duration" : 259
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back/formulario/cadastro",
+      "time" : {
+        "start" : 1670186950449,
+        "stop" : 1670186950601,
+        "duration" : 152
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "DELETE 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back/formulario",
+      "time" : {
+        "start" : 1670186950604,
+        "stop" : 1670186950686,
+        "duration" : 82
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **200** to equal **200**",
+      "time" : {
+        "start" : 1670186950688,
+        "stop" : 1670186950688,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **200** to equal **200**",
+      "time" : {
+        "start" : 1670186950689,
+        "stop" : 1670186950689,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Formulário"
+  }, {
+    "name" : "suite",
+    "value" : "Deletar formulário"
+  }, {
+    "name" : "epic",
+    "value" : "Formulário"
+  }, {
+    "name" : "feature",
+    "value" : "Deletar formulário"
+  }, {
+    "name" : "story",
+    "value" : "Todos os dados corretos"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "b485f9e801cdd21d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670165906690,
+          "stop" : 1670165907131,
+          "duration" : 441
+        }
+      }, {
+        "uid" : "38a47be1c37ef3f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670112366065,
+          "stop" : 1670112366487,
+          "duration" : 422
+        }
+      }, {
+        "uid" : "b97d574d08dbd6e3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670111484638,
+          "stop" : 1670111484968,
+          "duration" : 330
+        }
+      }, {
+        "uid" : "dfc80cc4970bad66",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670109891780,
+          "stop" : 1670109892593,
+          "duration" : 813
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "1147487df19155b5.json",
+  "parameterValues" : [ ]
+}

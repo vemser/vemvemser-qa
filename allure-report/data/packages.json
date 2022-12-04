@@ -1,0 +1,902 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "POST - Deve criar nova avaliação no banco de dados",
+    "uid" : "73fd243b5616d1dc",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "failed",
+    "time" : {
+      "start" : 1670186787703,
+      "stop" : 1670186817981,
+      "duration" : 30278
+    },
+    "flaky" : false,
+    "newFailed" : true,
+    "parameters" : [ ]
+  }, {
+    "name" : "DELETE - Deve deletar uma avaliação",
+    "uid" : "df3a10c5930bddde",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "failed",
+    "time" : {
+      "start" : 1670186818025,
+      "stop" : 1670186869153,
+      "duration" : 51128
+    },
+    "flaky" : false,
+    "newFailed" : true,
+    "parameters" : [ ]
+  }, {
+    "name" : "DELETE - Testar deletar avliação com ID incorreto",
+    "uid" : "247253b145761154",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "failed",
+    "time" : {
+      "start" : 1670186869165,
+      "stop" : 1670186873333,
+      "duration" : 4168
+    },
+    "flaky" : false,
+    "newFailed" : true,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET - Listar todas as avaliações",
+    "uid" : "cb57b8ab210866ea",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186873347,
+      "stop" : 1670186884660,
+      "duration" : 11313
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET - Listar avaliação por email",
+    "uid" : "40f6f0431a69adf1",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "failed",
+    "time" : {
+      "start" : 1670186884665,
+      "stop" : 1670186886531,
+      "duration" : 1866
+    },
+    "flaky" : false,
+    "newFailed" : true,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Deve atualizar uma avaliação",
+    "uid" : "ba0406e14ca0110",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "failed",
+    "time" : {
+      "start" : 1670186886542,
+      "stop" : 1670186887514,
+      "duration" : 972
+    },
+    "flaky" : false,
+    "newFailed" : true,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Testar atualizar avaliação passando ID inexistente",
+    "uid" : "134baa9793698486",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "failed",
+    "time" : {
+      "start" : 1670186887527,
+      "stop" : 1670186888386,
+      "duration" : 859
+    },
+    "flaky" : false,
+    "newFailed" : true,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET - Deve listar todos os candidatos do banco de dados ",
+    "uid" : "444b33802c60d03f",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186898652,
+      "stop" : 1670186910311,
+      "duration" : 11659
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Deve criar um novo candidato",
+    "uid" : "ec462e68af051e8e",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186910342,
+      "stop" : 1670186913637,
+      "duration" : 3295
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Testar criar candidato com campos vazios",
+    "uid" : "3bb046c7b4269d6d",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186913641,
+      "stop" : 1670186917051,
+      "duration" : 3410
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Testar criar candidato sem RG",
+    "uid" : "793e40f33e540997",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186917055,
+      "stop" : 1670186917932,
+      "duration" : 877
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Testar criar candidato com CPF inválido",
+    "uid" : "aade4d94db1d8cc2",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186917936,
+      "stop" : 1670186918417,
+      "duration" : 481
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Testar criar candidato nome menor que 3 caracteres",
+    "uid" : "393ba7b93756a9af",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186918420,
+      "stop" : 1670186920039,
+      "duration" : 1619
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "DELETE - Deve deletar um usuário",
+    "uid" : "58cb51ebc478d835",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186920045,
+      "stop" : 1670186926066,
+      "duration" : 6021
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "DELETE - Testar deletar usuário sem passar ID",
+    "uid" : "7b3e12e2168189ea",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186926071,
+      "stop" : 1670186926186,
+      "duration" : 115
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "DELETE - Testar deletar usuário com ID inexistente",
+    "uid" : "b3025078f664c9aa",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186926191,
+      "stop" : 1670186926328,
+      "duration" : 137
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "DELETE - Testar deletar usuário com ID inválido",
+    "uid" : "bc22b39bc9d07dfb",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186926331,
+      "stop" : 1670186926582,
+      "duration" : 251
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Atualizar um candidato",
+    "uid" : "af20e45639a808f3",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186926587,
+      "stop" : 1670186928707,
+      "duration" : 2120
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Testar atualizar um candidato com dados vazios",
+    "uid" : "73d7caee0b43646b",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186928715,
+      "stop" : 1670186929726,
+      "duration" : 1011
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Testar atualizar candidato preechendo ID inexistente",
+    "uid" : "d2ed7b3c51c55da1",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186929729,
+      "stop" : 1670186930950,
+      "duration" : 1221
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Testar atualizar um candidato com nome inválido",
+    "uid" : "b47f568d54b95afc",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186930953,
+      "stop" : 1670186931345,
+      "duration" : 392
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Tentar criar gestor com conta de colaborador | Retorna mensagem de erro",
+    "uid" : "a0a8c5d1dc1ef828",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "failed",
+    "time" : {
+      "start" : 1670186937439,
+      "stop" : 1670186939561,
+      "duration" : 2122
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "DELETE - Tentar deletar gestor com conta de colaborador | Retorna mensagem de erro",
+    "uid" : "5824a71ddaffd0af",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186939602,
+      "stop" : 1670186945091,
+      "duration" : 5489
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Tentar editar um gestor com conta de colaborador | Retorna mensagem de erro",
+    "uid" : "c3defe15867df452",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "failed",
+    "time" : {
+      "start" : 1670186945101,
+      "stop" : 1670186945946,
+      "duration" : 845
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Deve criar um novo formulário corretamente",
+    "uid" : "62167f30ee066bf9",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186949421,
+      "stop" : 1670186949742,
+      "duration" : 321
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Testar criar um formulário sem payload",
+    "uid" : "d787a52a792aaa0a",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186949747,
+      "stop" : 1670186949921,
+      "duration" : 174
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Testar criar um formulário sem estar matriculado",
+    "uid" : "5d34740d89cb469c",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186949925,
+      "stop" : 1670186950055,
+      "duration" : 130
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Testar criar formulário sem digitar curso",
+    "uid" : "671282bc5ae2b7ba",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186950059,
+      "stop" : 1670186950322,
+      "duration" : 263
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Testar criar formulário sem preencher instituição",
+    "uid" : "70ae42ffc7c56126",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186950327,
+      "stop" : 1670186950423,
+      "duration" : 96
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "DELETE - Deve deletar um formulário do banco de dados",
+    "uid" : "1147487df19155b5",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186950430,
+      "stop" : 1670186950689,
+      "duration" : 259
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "DELETE - Testar deletar formulário com id inexistente",
+    "uid" : "2be466a227eaadbf",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186950692,
+      "stop" : 1670186950854,
+      "duration" : 162
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "DELETE - Testar deletar formulário com id inválido",
+    "uid" : "16c8b89fa2573b34",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186950857,
+      "stop" : 1670186950969,
+      "duration" : 112
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Deve atualizar um formulário existente",
+    "uid" : "3e7b6a40cf992e55",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186950972,
+      "stop" : 1670186951550,
+      "duration" : 578
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Tentar atualizar formulários com campos vazios",
+    "uid" : "24febd1442cd1d7c",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186951554,
+      "stop" : 1670186952952,
+      "duration" : 1398
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Tentar atualizar formulário com campos inválidos",
+    "uid" : "be2255163822051a",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186952985,
+      "stop" : 1670186954537,
+      "duration" : 1552
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Tentar atualizar formulário com ID inexistente",
+    "uid" : "beb98b18a3f0cf3c",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186954542,
+      "stop" : 1670186955812,
+      "duration" : 1270
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Tentar atualizar formulário com ID inválido",
+    "uid" : "e6c905b6ed50dea5",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186955815,
+      "stop" : 1670186956275,
+      "duration" : 460
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET - Listar todos os formulários",
+    "uid" : "126d5c6a9bc39b69",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186956280,
+      "stop" : 1670186957195,
+      "duration" : 915
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET - Tentar listar todos os formulários passando qs inválida ",
+    "uid" : "d2c4aabf4676037f",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186957198,
+      "stop" : 1670186958434,
+      "duration" : 1236
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET - Tentar listar todos os formulários sem, passar queries",
+    "uid" : "18c81810592a79d1",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186958443,
+      "stop" : 1670186958803,
+      "duration" : 360
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET - Deve listar um formulário individual",
+    "uid" : "9630693e3d1d826d",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186958810,
+      "stop" : 1670186959649,
+      "duration" : 839
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET - Deve listar todos os gestores do banco de dados ",
+    "uid" : "704860c3d64d24dd",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186966298,
+      "stop" : 1670186966755,
+      "duration" : 457
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET - Deve listar o gestor logado",
+    "uid" : "4d45d90719456e9f",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186966760,
+      "stop" : 1670186966985,
+      "duration" : 225
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET - Deve listar o gestor passando ID",
+    "uid" : "5660e388bf3dd116",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186966990,
+      "stop" : 1670186967979,
+      "duration" : 989
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET - Testar listar gestor passando id inexistente",
+    "uid" : "50d023e8fcf2f474",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186967983,
+      "stop" : 1670186968630,
+      "duration" : 647
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET - Testar listar gestor passando id inválido",
+    "uid" : "50895d5291549621",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186968634,
+      "stop" : 1670186968810,
+      "duration" : 176
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Deve desativar uma conta",
+    "uid" : "13e77389c6f9c72e",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186968816,
+      "stop" : 1670186969555,
+      "duration" : 739
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Tentar desativar conta inexistente",
+    "uid" : "3495603d79fd401b",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "failed",
+    "time" : {
+      "start" : 1670186969559,
+      "stop" : 1670186970624,
+      "duration" : 1065
+    },
+    "flaky" : false,
+    "newFailed" : true,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET - Listar todas as contas inativas",
+    "uid" : "5e33445d109dcce4",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186970663,
+      "stop" : 1670186970869,
+      "duration" : 206
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Deve adicionar um novo gestor",
+    "uid" : "58b7ce1679dcc12b",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186970873,
+      "stop" : 1670186971798,
+      "duration" : 925
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Testar adicionar gestor sem passar payload no body",
+    "uid" : "39ddb4f1882db412",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186971802,
+      "stop" : 1670186972114,
+      "duration" : 312
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Testar adicionar gestor com dados vazios",
+    "uid" : "39f2380498deecec",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186972116,
+      "stop" : 1670186972268,
+      "duration" : 152
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Testar adicionar um gestor com nome inválido",
+    "uid" : "bac72d3ec844d1af",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186972270,
+      "stop" : 1670186972394,
+      "duration" : 124
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Testar adicionar um gestor com nome menor que 3 caracteres",
+    "uid" : "a6551d864bd0bfc3",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186972399,
+      "stop" : 1670186972502,
+      "duration" : 103
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Testar adicionar um gestor com email inválido",
+    "uid" : "35b26a6863693b60",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186972505,
+      "stop" : 1670186973363,
+      "duration" : 858
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "DELETE - Deve deletar um Gestor corretamente",
+    "uid" : "9e3df27cee6235ae",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186973366,
+      "stop" : 1670186974171,
+      "duration" : 805
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "DELETE - Testar deletar um gestor passando ID inexistente",
+    "uid" : "5336556e0c84a2eb",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186974173,
+      "stop" : 1670186974287,
+      "duration" : 114
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "DELETE - Testar deletar um gestor passando ID inválido",
+    "uid" : "f09db6d2b545de22",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186974290,
+      "stop" : 1670186974490,
+      "duration" : 200
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Deve atualizar um gestor corretamente",
+    "uid" : "6a8bbf3219f45249",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186974494,
+      "stop" : 1670186975284,
+      "duration" : 790
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Testar atualizar pessoa sem passar ID",
+    "uid" : "a136505b597513f7",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186975287,
+      "stop" : 1670186975407,
+      "duration" : 120
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Testar atualizar pessoa dados vazios ",
+    "uid" : "623302da261ce111",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186975411,
+      "stop" : 1670186975975,
+      "duration" : 564
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Deve criar nova inscrição no banco de dados",
+    "uid" : "6f455e2d08c33f77",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186982467,
+      "stop" : 1670186985256,
+      "duration" : 2789
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Tentar criar inscrção sem candidato",
+    "uid" : "90d78e45a89d292e",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186985274,
+      "stop" : 1670186985665,
+      "duration" : 391
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET - Listar todas as inscrições",
+    "uid" : "d4d9a701ef03837d",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186985671,
+      "stop" : 1670186986276,
+      "duration" : 605
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET - Listar inscrição Por ID",
+    "uid" : "51990599eb89e33b",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186986280,
+      "stop" : 1670186987807,
+      "duration" : 1527
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET - Testar listar inscrição por ID inválido",
+    "uid" : "65a3ec30e4b7255d",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186987810,
+      "stop" : 1670186987916,
+      "duration" : 106
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET - Listar por email",
+    "uid" : "60b3b83ac6d6af94",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186987920,
+      "stop" : 1670186989305,
+      "duration" : 1385
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET - Tentar buscar por email inexistente",
+    "uid" : "7e9d4f1593f7f93a",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186989308,
+      "stop" : 1670186990873,
+      "duration" : 1565
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET - Listar todas as trilhas",
+    "uid" : "742be0167988c785",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670186993187,
+      "stop" : 1670186993689,
+      "duration" : 502
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ]
+}

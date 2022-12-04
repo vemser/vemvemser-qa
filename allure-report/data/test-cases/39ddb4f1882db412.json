@@ -1,0 +1,140 @@
+{
+  "uid" : "39ddb4f1882db412",
+  "name" : "POST - Testar adicionar gestor sem passar payload no body",
+  "fullName" : "POST - Testar adicionar gestor sem passar payload no body",
+  "historyId" : "46960749de041056704662a2c3dad438",
+  "time" : {
+    "start" : 1670186971802,
+    "stop" : 1670186972114,
+    "duration" : 312
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST 400 http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back/gestor/cadastro",
+      "time" : {
+        "start" : 1670186971812,
+        "stop" : 1670186972112,
+        "duration" : 300
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **400** to equal **400**",
+      "time" : {
+        "start" : 1670186972114,
+        "stop" : 1670186972114,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "400"
+      }, {
+        "name" : "expected",
+        "value" : "400"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Gestor"
+  }, {
+    "name" : "suite",
+    "value" : "Adicionar Gestor"
+  }, {
+    "name" : "epic",
+    "value" : "Gestor"
+  }, {
+    "name" : "feature",
+    "value" : "Adicionar um novo gestor no banco de dados"
+  }, {
+    "name" : "story",
+    "value" : "Sem passar payload"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "d640e1ee9f40036",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670165925332,
+          "stop" : 1670165925455,
+          "duration" : 123
+        }
+      }, {
+        "uid" : "849782b74bf322e2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670112383292,
+          "stop" : 1670112383569,
+          "duration" : 277
+        }
+      }, {
+        "uid" : "88674536b953b7f1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670111501300,
+          "stop" : 1670111501578,
+          "duration" : 278
+        }
+      }, {
+        "uid" : "4b6d5ef9af9dda0f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670109910924,
+          "stop" : 1670109911147,
+          "duration" : 223
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "39ddb4f1882db412.json",
+  "parameterValues" : [ ]
+}

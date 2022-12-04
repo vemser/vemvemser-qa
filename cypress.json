@@ -1,4 +1,5 @@
 {
   "env" : {
-  "API_BASE": "http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back"}
+  "API_BASE": "http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back"},
+  "video": false
 }

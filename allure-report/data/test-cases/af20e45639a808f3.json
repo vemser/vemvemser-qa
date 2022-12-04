@@ -1,0 +1,270 @@
+{
+  "uid" : "af20e45639a808f3",
+  "name" : "PUT - Atualizar um candidato",
+  "fullName" : "PUT - Atualizar um candidato",
+  "historyId" : "3f9b5213831dc22b3e19412302dd0621",
+  "time" : {
+    "start" : 1670186926587,
+    "stop" : 1670186928707,
+    "duration" : 2120
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back/formulario/cadastro",
+      "time" : {
+        "start" : 1670186926606,
+        "stop" : 1670186926884,
+        "duration" : 278
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back/candidato/cadastro",
+      "time" : {
+        "start" : 1670186926888,
+        "stop" : 1670186927049,
+        "duration" : 161
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "PUT 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back/candidato/update",
+      "time" : {
+        "start" : 1670186927054,
+        "stop" : 1670186928529,
+        "duration" : 1475
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **MA** to equal **MA**",
+      "time" : {
+        "start" : 1670186928534,
+        "stop" : 1670186928534,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "MA"
+      }, {
+        "name" : "expected",
+        "value" : "MA"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **200** to equal **200**",
+      "time" : {
+        "start" : 1670186928534,
+        "stop" : 1670186928534,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "DELETE 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back/candidato/deletar",
+      "time" : {
+        "start" : 1670186928535,
+        "stop" : 1670186928704,
+        "duration" : 169
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **200** to equal **200**",
+      "time" : {
+        "start" : 1670186928706,
+        "stop" : 1670186928706,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **Madaline** to equal **Madaline**",
+      "time" : {
+        "start" : 1670186928706,
+        "stop" : 1670186928706,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "Madaline"
+      }, {
+        "name" : "expected",
+        "value" : "Madaline"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **200** to equal **200**",
+      "time" : {
+        "start" : 1670186928707,
+        "stop" : 1670186928707,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 9,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Candidado"
+  }, {
+    "name" : "suite",
+    "value" : "Atualizar candidato"
+  }, {
+    "name" : "epic",
+    "value" : "Candidato"
+  }, {
+    "name" : "feature",
+    "value" : "Atualizar um candidato no banco de dados"
+  }, {
+    "name" : "story",
+    "value" : "Todos os dados corretos"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "b6c18827614dc184",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670165886416,
+          "stop" : 1670165888255,
+          "duration" : 1839
+        }
+      }, {
+        "uid" : "8a073b1579990f4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670112347294,
+          "stop" : 1670112348198,
+          "duration" : 904
+        }
+      }, {
+        "uid" : "4b11f8b39d7c8271",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670111472509,
+          "stop" : 1670111472882,
+          "duration" : 373
+        }
+      }, {
+        "uid" : "73fae6c5cbbc58c",
+        "status" : "failed",
+        "statusDetails" : "expected 400 to equal 200",
+        "time" : {
+          "start" : 1670109865951,
+          "stop" : 1670109867840,
+          "duration" : 1889
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "af20e45639a808f3.json",
+  "parameterValues" : [ ]
+}

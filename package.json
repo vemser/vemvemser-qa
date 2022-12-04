@@ -17,7 +17,8 @@
     "aftertest": "npm run allure:report",
     "allure:clear": "rm -r allure-results/ allure-report cypress/screenshots || true",
     "copia:widgets": "cp -RT cypress/fixtures/widgets allure-report/widgets",
-    "allure:history": "rm -R -f allure-results/* && mv -f allure-report/history allure-results/history && rm -r allure-report || true"
+    "allure:history": "rm -R -f allure-results/* && mv -f allure-report/history allure-results/history && rm -r allure-report || true",
+    "test:all": "npm run allure:history && npm run tests"
   },
   "name": "vemvemser-api",
   "description": "VemVemSer - Sistema para inscrição do Vem Ser​",

@@ -1,0 +1,212 @@
+{
+  "uid" : "623302da261ce111",
+  "name" : "PUT - Testar atualizar pessoa dados vazios ",
+  "fullName" : "PUT - Testar atualizar pessoa dados vazios ",
+  "historyId" : "033b229338b78a49f663dd10476c4b0d",
+  "time" : {
+    "start" : 1670186975411,
+    "stop" : 1670186975975,
+    "duration" : 564
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back/gestor/cadastro",
+      "time" : {
+        "start" : 1670186975431,
+        "stop" : 1670186975656,
+        "duration" : 225
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "PUT 400 http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back/gestor/411",
+      "time" : {
+        "start" : 1670186975659,
+        "stop" : 1670186975881,
+        "duration" : 222
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "DELETE 204 http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back/gestor/411",
+      "time" : {
+        "start" : 1670186975883,
+        "stop" : 1670186975972,
+        "duration" : 89
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **204** to equal **204**",
+      "time" : {
+        "start" : 1670186975974,
+        "stop" : 1670186975974,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "204"
+      }, {
+        "name" : "expected",
+        "value" : "204"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **400** to equal **400**",
+      "time" : {
+        "start" : 1670186975974,
+        "stop" : 1670186975974,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "400"
+      }, {
+        "name" : "expected",
+        "value" : "400"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **200** to equal **200**",
+      "time" : {
+        "start" : 1670186975975,
+        "stop" : 1670186975975,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Gestor"
+  }, {
+    "name" : "suite",
+    "value" : "Atualizar gestor"
+  }, {
+    "name" : "epic",
+    "value" : "Gestor"
+  }, {
+    "name" : "feature",
+    "value" : "Atualizar um gestor do banco de dados"
+  }, {
+    "name" : "story",
+    "value" : "Passando dados vazios"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "75ac3ee287407859",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670165927804,
+          "stop" : 1670165928254,
+          "duration" : 450
+        }
+      }, {
+        "uid" : "6caa26f81120eb09",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670112385352,
+          "stop" : 1670112385777,
+          "duration" : 425
+        }
+      }, {
+        "uid" : "d977a6f744ca66d1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670111505642,
+          "stop" : 1670111506037,
+          "duration" : 395
+        }
+      }, {
+        "uid" : "eecd2a64e3938613",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670109912950,
+          "stop" : 1670109913681,
+          "duration" : 731
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "623302da261ce111.json",
+  "parameterValues" : [ ]
+}

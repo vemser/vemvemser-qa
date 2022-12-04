@@ -1,0 +1,204 @@
+{
+  "uid" : "58cb51ebc478d835",
+  "name" : "DELETE - Deve deletar um usuário",
+  "fullName" : "DELETE - Deve deletar um usuário",
+  "historyId" : "1b37f882c03e1c6a9f87d15f939717f5",
+  "time" : {
+    "start" : 1670186920045,
+    "stop" : 1670186926066,
+    "duration" : 6021
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back/formulario/cadastro",
+      "time" : {
+        "start" : 1670186920064,
+        "stop" : 1670186920157,
+        "duration" : 93
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back/candidato/cadastro",
+      "time" : {
+        "start" : 1670186920158,
+        "stop" : 1670186925923,
+        "duration" : 5765
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "DELETE 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back/candidato/deletar",
+      "time" : {
+        "start" : 1670186925960,
+        "stop" : 1670186926063,
+        "duration" : 103
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **200** to equal **200**",
+      "time" : {
+        "start" : 1670186926065,
+        "stop" : 1670186926065,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **Elmer** to equal **Elmer**",
+      "time" : {
+        "start" : 1670186926065,
+        "stop" : 1670186926065,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "Elmer"
+      }, {
+        "name" : "expected",
+        "value" : "Elmer"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **200** to equal **200**",
+      "time" : {
+        "start" : 1670186926065,
+        "stop" : 1670186926065,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Candidado"
+  }, {
+    "name" : "suite",
+    "value" : "Deletar candidato"
+  }, {
+    "name" : "epic",
+    "value" : "Candidato"
+  }, {
+    "name" : "feature",
+    "value" : "Deletar um candidato do banco de dados"
+  }, {
+    "name" : "story",
+    "value" : "Todos os dados corretos"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "cedabfe03c2bc9e1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670165882455,
+          "stop" : 1670165885574,
+          "duration" : 3119
+        }
+      }, {
+        "uid" : "85fc8d521c6b7368",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670112346267,
+          "stop" : 1670112346901,
+          "duration" : 634
+        }
+      }, {
+        "uid" : "6c07cef42426c1f9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670111471914,
+          "stop" : 1670111472222,
+          "duration" : 308
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "58cb51ebc478d835.json",
+  "parameterValues" : [ ]
+}

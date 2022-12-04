@@ -1,0 +1,186 @@
+{
+  "uid" : "134baa9793698486",
+  "name" : "PUT - Testar atualizar avaliação passando ID inexistente",
+  "fullName" : "PUT - Testar atualizar avaliação passando ID inexistente",
+  "historyId" : "9bc84fdacc5a41c1a8e1fbcb49faea3a",
+  "time" : {
+    "start" : 1670186887527,
+    "stop" : 1670186888386,
+    "duration" : 859
+  },
+  "status" : "failed",
+  "statusMessage" : "expected 400 to equal 200",
+  "statusTrace" : "AssertionError: expected 400 to equal 200\n    at Context.eval (http://localhost:54676/__cypress/tests?p=cypress\\integration\\tests\\aceitacao\\avaliacao.spec.js:763:38)",
+  "flaky" : false,
+  "newFailed" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "expected 400 to equal 200",
+    "statusTrace" : "AssertionError: expected 400 to equal 200\n    at Context.eval (http://localhost:54676/__cypress/tests?p=cypress\\integration\\tests\\aceitacao\\avaliacao.spec.js:763:38)",
+    "steps" : [ {
+      "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back/formulario/cadastro",
+      "time" : {
+        "start" : 1670186887555,
+        "stop" : 1670186887864,
+        "duration" : 309
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "POST 400 http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back/candidato/cadastro",
+      "time" : {
+        "start" : 1670186887868,
+        "stop" : 1670186888229,
+        "duration" : 361
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **400** to equal **200**",
+      "time" : {
+        "start" : 1670186888385,
+        "stop" : 1670186888385,
+        "duration" : 0
+      },
+      "status" : "failed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "400"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **200** to equal **200**",
+      "time" : {
+        "start" : 1670186888386,
+        "stop" : 1670186888386,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "3843f87cf0b70ce5",
+      "name" : "tests/aceitacao/avaliacao.spec.js:2022-12-04T20:48:08.240Z",
+      "source" : "3843f87cf0b70ce5.png",
+      "type" : "image/png",
+      "size" : 87131
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Avaliação"
+  }, {
+    "name" : "suite",
+    "value" : "Atualizar avaliação"
+  }, {
+    "name" : "epic",
+    "value" : "Avaliação"
+  }, {
+    "name" : "feature",
+    "value" : "Atualizar avaliação"
+  }, {
+    "name" : "story",
+    "value" : "Todos os dados corretos"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste falhado",
+      "matchedStatuses" : [ "failed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "836e5065cee9ba62",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670165824337,
+          "stop" : 1670165826374,
+          "duration" : 2037
+        }
+      }, {
+        "uid" : "f702e2807f4bd9b6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670112321178,
+          "stop" : 1670112324058,
+          "duration" : 2880
+        }
+      }, {
+        "uid" : "5448e9cd41815b67",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670111461932,
+          "stop" : 1670111463837,
+          "duration" : 1905
+        }
+      }, {
+        "uid" : "17855530ce90e67f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670109841616,
+          "stop" : 1670109844060,
+          "duration" : 2444
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "134baa9793698486.json",
+  "parameterValues" : [ ]
+}

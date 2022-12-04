@@ -1,0 +1,230 @@
+{
+  "uid" : "e6c905b6ed50dea5",
+  "name" : "PUT - Tentar atualizar formulário com ID inválido",
+  "fullName" : "PUT - Tentar atualizar formulário com ID inválido",
+  "historyId" : "5417a83ccce1b0bace8fa89bee3fd0e8",
+  "time" : {
+    "start" : 1670186955815,
+    "stop" : 1670186956275,
+    "duration" : 460
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back/formulario/cadastro",
+      "time" : {
+        "start" : 1670186955829,
+        "stop" : 1670186956082,
+        "duration" : 253
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "PUT 400 http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back/formulario",
+      "time" : {
+        "start" : 1670186956085,
+        "stop" : 1670186956161,
+        "duration" : 76
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "DELETE 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back/formulario",
+      "time" : {
+        "start" : 1670186956167,
+        "stop" : 1670186956273,
+        "duration" : 106
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **200** to equal **200**",
+      "time" : {
+        "start" : 1670186956274,
+        "stop" : 1670186956274,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **400** to be one of **[ 500, 400 ]**",
+      "time" : {
+        "start" : 1670186956274,
+        "stop" : 1670186956274,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "400"
+      }, {
+        "name" : "expected",
+        "value" : "[\n  500,\n  400\n]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **[ 500, 400 ]** to be an array",
+      "time" : {
+        "start" : 1670186956274,
+        "stop" : 1670186956274,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[\n  500,\n  400\n]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **200** to equal **200**",
+      "time" : {
+        "start" : 1670186956274,
+        "stop" : 1670186956274,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Formulário"
+  }, {
+    "name" : "suite",
+    "value" : "Atualizar formulário"
+  }, {
+    "name" : "epic",
+    "value" : "Formulário"
+  }, {
+    "name" : "feature",
+    "value" : "Atualizar formulário"
+  }, {
+    "name" : "story",
+    "value" : "ID inválido"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "19cfa8a7284e78be",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670165912148,
+          "stop" : 1670165912410,
+          "duration" : 262
+        }
+      }, {
+        "uid" : "3c247cc01bf245e1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670112370779,
+          "stop" : 1670112371676,
+          "duration" : 897
+        }
+      }, {
+        "uid" : "5910843843f2336c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670111489356,
+          "stop" : 1670111489728,
+          "duration" : 372
+        }
+      }, {
+        "uid" : "14688d8f3c7b00c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670109898484,
+          "stop" : 1670109898796,
+          "duration" : 312
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "e6c905b6ed50dea5.json",
+  "parameterValues" : [ ]
+}

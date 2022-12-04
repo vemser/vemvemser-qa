@@ -1,0 +1,81 @@
+{
+  "total" : 8,
+  "items" : [ {
+    "uid" : "596bbc54a71b12b2ce0a54fd43688819",
+    "name" : "Avaliação",
+    "statistic" : {
+      "failed" : 4,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 5
+    }
+  }, {
+    "uid" : "ab795936fcd023fb68fe3df02dbe355f",
+    "name" : "Colaborador",
+    "statistic" : {
+      "failed" : 2,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 3
+    }
+  }, {
+    "uid" : "dced5c2daad8acf6da35225c0a844fad",
+    "name" : "Gestor",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 7,
+      "unknown" : 0,
+      "total" : 8
+    }
+  }, {
+    "uid" : "2f2694a05a44197b91be13b4f0e06c8c",
+    "name" : "Formulário",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 5,
+      "unknown" : 0,
+      "total" : 5
+    }
+  }, {
+    "uid" : "62675ffa86b90a748b9c3fbd799ef7bc",
+    "name" : "Candidato",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "4265bbe0e6186b80a2c1da022af36743",
+    "name" : "Inscrição",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    }
+  }, {
+    "uid" : "0ecb9cb4c156d13d394f48e0f0dbb71f",
+    "name" : "Trilhas",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

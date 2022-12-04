@@ -1,0 +1,158 @@
+{
+  "uid" : "16c8b89fa2573b34",
+  "name" : "DELETE - Testar deletar formulário com id inválido",
+  "fullName" : "DELETE - Testar deletar formulário com id inválido",
+  "historyId" : "cbec1a47c9cf0cfe97276622b4f86c73",
+  "time" : {
+    "start" : 1670186950857,
+    "stop" : 1670186950969,
+    "duration" : 112
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "DELETE 400 http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back/formulario",
+      "time" : {
+        "start" : 1670186950878,
+        "stop" : 1670186950966,
+        "duration" : 88
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **400** to be one of **[ 500, 400 ]**",
+      "time" : {
+        "start" : 1670186950968,
+        "stop" : 1670186950969,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "400"
+      }, {
+        "name" : "expected",
+        "value" : "[\n  500,\n  400\n]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **[ 500, 400 ]** to be an array",
+      "time" : {
+        "start" : 1670186950969,
+        "stop" : 1670186950969,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[\n  500,\n  400\n]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Formulário"
+  }, {
+    "name" : "suite",
+    "value" : "Deletar formulário"
+  }, {
+    "name" : "epic",
+    "value" : "Formulário"
+  }, {
+    "name" : "feature",
+    "value" : "Deletar formulário"
+  }, {
+    "name" : "story",
+    "value" : "Passando ID inválido"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "5439b764c43fa61c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670165907373,
+          "stop" : 1670165907634,
+          "duration" : 261
+        }
+      }, {
+        "uid" : "c899081134927e17",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670112366623,
+          "stop" : 1670112366712,
+          "duration" : 89
+        }
+      }, {
+        "uid" : "2aefa17230c63362",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670111485070,
+          "stop" : 1670111485158,
+          "duration" : 88
+        }
+      }, {
+        "uid" : "6b352035399c5419",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670109892954,
+          "stop" : 1670109893061,
+          "duration" : 107
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "16c8b89fa2573b34.json",
+  "parameterValues" : [ ]
+}

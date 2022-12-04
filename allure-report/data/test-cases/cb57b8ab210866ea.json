@@ -1,0 +1,161 @@
+{
+  "uid" : "cb57b8ab210866ea",
+  "name" : "GET - Listar todas as avaliações",
+  "fullName" : "GET - Listar todas as avaliações",
+  "historyId" : "d3bba2bcba18defe7fdbf9234b9fe46c",
+  "time" : {
+    "start" : 1670186873347,
+    "stop" : 1670186884660,
+    "duration" : 11313
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back/avaliacao",
+      "time" : {
+        "start" : 1670186873372,
+        "stop" : 1670186884619,
+        "duration" : 11247
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **{ Object (idAvaliacao, avaliador, ...) }** to have key **idAvaliacao**",
+      "time" : {
+        "start" : 1670186884659,
+        "stop" : 1670186884659,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "[\n  \"aprovado\",\n  \"avaliador\",\n  \"idAvaliacao\",\n  \"inscricao\"\n]"
+      }, {
+        "name" : "expected",
+        "value" : "[\n  \"idAvaliacao\"\n]"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **200** to equal **200**",
+      "time" : {
+        "start" : 1670186884659,
+        "stop" : 1670186884659,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "200"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Avaliação"
+  }, {
+    "name" : "suite",
+    "value" : "Listar avaliação"
+  }, {
+    "name" : "epic",
+    "value" : "Avaliação"
+  }, {
+    "name" : "feature",
+    "value" : "Listar avaliações"
+  }, {
+    "name" : "story",
+    "value" : "Nenhum dado necessário"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "862cdb3b441d7e26",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670165812335,
+          "stop" : 1670165816147,
+          "duration" : 3812
+        }
+      }, {
+        "uid" : "8c769d0332a80922",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670112317022,
+          "stop" : 1670112317243,
+          "duration" : 221
+        }
+      }, {
+        "uid" : "7821b95d274c1c16",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670111456351,
+          "stop" : 1670111456516,
+          "duration" : 165
+        }
+      }, {
+        "uid" : "64c4cc6b64bd3f70",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670109837000,
+          "stop" : 1670109837276,
+          "duration" : 276
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "cb57b8ab210866ea.json",
+  "parameterValues" : [ ]
+}

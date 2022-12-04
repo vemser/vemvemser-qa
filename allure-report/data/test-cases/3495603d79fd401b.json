@@ -1,0 +1,150 @@
+{
+  "uid" : "3495603d79fd401b",
+  "name" : "PUT - Tentar desativar conta inexistente",
+  "fullName" : "PUT - Tentar desativar conta inexistente",
+  "historyId" : "41af2013874293a1f1bef81c7d18a9e3",
+  "time" : {
+    "start" : 1670186969559,
+    "stop" : 1670186970624,
+    "duration" : 1065
+  },
+  "status" : "failed",
+  "statusMessage" : "expected 500 to equal 200",
+  "statusTrace" : "AssertionError: expected 500 to equal 200\n    at Context.eval (http://localhost:54676/__cypress/tests?p=cypress\\integration\\tests\\aceitacao\\gestor.spec.js:393:36)",
+  "flaky" : false,
+  "newFailed" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "expected 500 to equal 200",
+    "statusTrace" : "AssertionError: expected 500 to equal 200\n    at Context.eval (http://localhost:54676/__cypress/tests?p=cypress\\integration\\tests\\aceitacao\\gestor.spec.js:393:36)",
+    "steps" : [ {
+      "name" : "POST 500 http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-back/gestor/cadastro",
+      "time" : {
+        "start" : 1670186969584,
+        "stop" : 1670186970410,
+        "duration" : 826
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **500** to equal **200**",
+      "time" : {
+        "start" : 1670186970624,
+        "stop" : 1670186970624,
+        "duration" : 0
+      },
+      "status" : "failed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "500"
+      }, {
+        "name" : "expected",
+        "value" : "200"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "ec6ea12aa08cbc0b",
+      "name" : "tests/aceitacao/gestor.spec.js:2022-12-04T20:49:30.429Z",
+      "source" : "ec6ea12aa08cbc0b.png",
+      "type" : "image/png",
+      "size" : 98163
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Gestor"
+  }, {
+    "name" : "suite",
+    "value" : "Desativação de conta"
+  }, {
+    "name" : "epic",
+    "value" : "Gestor"
+  }, {
+    "name" : "feature",
+    "value" : "Desativar uma conta"
+  }, {
+    "name" : "story",
+    "value" : "Todos os dados corretos"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste falhado",
+      "matchedStatuses" : [ "failed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "11c733e31e822ad",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670165923914,
+          "stop" : 1670165924296,
+          "duration" : 382
+        }
+      }, {
+        "uid" : "e7271cca4b43a8ef",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670112382185,
+          "stop" : 1670112382648,
+          "duration" : 463
+        }
+      }, {
+        "uid" : "e4227ad273bcd423",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670111500110,
+          "stop" : 1670111500722,
+          "duration" : 612
+        }
+      }, {
+        "uid" : "44c872542657e154",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670109910047,
+          "stop" : 1670109910491,
+          "duration" : 444
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "3495603d79fd401b.json",
+  "parameterValues" : [ ]
+}

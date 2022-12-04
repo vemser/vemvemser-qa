@@ -42,10 +42,9 @@ context('Candidado', () => {
             let estado = 'BA';
             let cidade = faker.address.cityName();
             let pcdboolean = false;
-            let idFormulario;
             formulario.formularioCadastro(formBody)
                 .then((response) => {
-                    idFormulario = response.body.idFormulario
+                    let idFormulario = response.body.idFormulario
                     candidato.candidatoCadastro(nome, dataNascimento, email, telefone, rg, cpf, estado, cidade, pcdboolean, idFormulario)
                         .then((response) => {
                             expect(response.status).to.eq(200)
@@ -54,10 +53,6 @@ context('Candidado', () => {
                                 .then((response) => {
                                     expect(response.status).to.eq(200)
                                 })
-                        })
-                    formulario.formularioDelete(idFormulario)
-                        .then((response) => {
-                            expect(response.status).to.eq(200)
                         })
                 })
         });
@@ -174,7 +169,7 @@ context('Candidado', () => {
         });
     })
 
-    context('Deletar usuário', () => {
+    context('Deletar candidato', () => {
         it('DELETE - Deve deletar um usuário', () => {
             cy.allure()
                 .epic('Candidato')
@@ -202,10 +197,6 @@ context('Candidado', () => {
                                 .then((response) => {
                                     expect(response.status).to.eq(200)
                                 })
-                        })
-                    formulario.formularioDelete(response.body.idFormulario)
-                        .then((response) => {
-                            expect(response.status).to.eq(200)
                         })
                 })
         });
@@ -294,10 +285,6 @@ context('Candidado', () => {
                                     expect(response.status).to.eq(200)
                                 })
                         })
-                    formulario.formularioDelete(response.body.idFormulario)
-                        .then((response) => {
-                            expect(response.status).to.eq(200)
-                        })
                 })
         });
 
@@ -332,10 +319,6 @@ context('Candidado', () => {
                                 .then((response) => {
                                     expect(response.status).to.eq(200)
                                 })
-                        })
-                    formulario.formularioDelete(response.body.idFormulario)
-                        .then((response) => {
-                            expect(response.status).to.eq(200)
                         })
                 })
         });
@@ -382,10 +365,6 @@ context('Candidado', () => {
                                     expect(response.status).to.eq(200)
                                 })
                         })
-                    formulario.formularioDelete(response.body.idFormulario)
-                        .then((response) => {
-                            expect(response.status).to.eq(200)
-                        })
                 })
         });
 
@@ -430,10 +409,6 @@ context('Candidado', () => {
                                 .then((response) => {
                                     expect(response.status).to.eq(200)
                                 })
-                        })
-                    formulario.formularioDelete(response.body.idFormulario)
-                        .then((response) => {
-                            expect(response.status).to.eq(200)
                         })
                 })
         });

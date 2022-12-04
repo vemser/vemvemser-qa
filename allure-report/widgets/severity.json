@@ -1,0 +1,691 @@
+[ {
+  "uid" : "3bb046c7b4269d6d",
+  "name" : "POST - Testar criar candidato com campos vazios",
+  "time" : {
+    "start" : 1670186913641,
+    "stop" : 1670186917051,
+    "duration" : 3410
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "24febd1442cd1d7c",
+  "name" : "PUT - Tentar atualizar formulários com campos vazios",
+  "time" : {
+    "start" : 1670186951554,
+    "stop" : 1670186952952,
+    "duration" : 1398
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d2c4aabf4676037f",
+  "name" : "GET - Tentar listar todos os formulários passando qs inválida ",
+  "time" : {
+    "start" : 1670186957198,
+    "stop" : 1670186958434,
+    "duration" : 1236
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "50d023e8fcf2f474",
+  "name" : "GET - Testar listar gestor passando id inexistente",
+  "time" : {
+    "start" : 1670186967983,
+    "stop" : 1670186968630,
+    "duration" : 647
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1147487df19155b5",
+  "name" : "DELETE - Deve deletar um formulário do banco de dados",
+  "time" : {
+    "start" : 1670186950430,
+    "stop" : 1670186950689,
+    "duration" : 259
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f09db6d2b545de22",
+  "name" : "DELETE - Testar deletar um gestor passando ID inválido",
+  "time" : {
+    "start" : 1670186974290,
+    "stop" : 1670186974490,
+    "duration" : 200
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a6551d864bd0bfc3",
+  "name" : "POST - Testar adicionar um gestor com nome menor que 3 caracteres",
+  "time" : {
+    "start" : 1670186972399,
+    "stop" : 1670186972502,
+    "duration" : 103
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b3025078f664c9aa",
+  "name" : "DELETE - Testar deletar usuário com ID inexistente",
+  "time" : {
+    "start" : 1670186926191,
+    "stop" : 1670186926328,
+    "duration" : 137
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "50895d5291549621",
+  "name" : "GET - Testar listar gestor passando id inválido",
+  "time" : {
+    "start" : 1670186968634,
+    "stop" : 1670186968810,
+    "duration" : 176
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e6c905b6ed50dea5",
+  "name" : "PUT - Tentar atualizar formulário com ID inválido",
+  "time" : {
+    "start" : 1670186955815,
+    "stop" : 1670186956275,
+    "duration" : 460
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9630693e3d1d826d",
+  "name" : "GET - Deve listar um formulário individual",
+  "time" : {
+    "start" : 1670186958810,
+    "stop" : 1670186959649,
+    "duration" : 839
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "58b7ce1679dcc12b",
+  "name" : "POST - Deve adicionar um novo gestor",
+  "time" : {
+    "start" : 1670186970873,
+    "stop" : 1670186971798,
+    "duration" : 925
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bc22b39bc9d07dfb",
+  "name" : "DELETE - Testar deletar usuário com ID inválido",
+  "time" : {
+    "start" : 1670186926331,
+    "stop" : 1670186926582,
+    "duration" : 251
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c3defe15867df452",
+  "name" : "PUT - Tentar editar um gestor com conta de colaborador | Retorna mensagem de erro",
+  "time" : {
+    "start" : 1670186945101,
+    "stop" : 1670186945946,
+    "duration" : 845
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "af20e45639a808f3",
+  "name" : "PUT - Atualizar um candidato",
+  "time" : {
+    "start" : 1670186926587,
+    "stop" : 1670186928707,
+    "duration" : 2120
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2be466a227eaadbf",
+  "name" : "DELETE - Testar deletar formulário com id inexistente",
+  "time" : {
+    "start" : 1670186950692,
+    "stop" : 1670186950854,
+    "duration" : 162
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "39ddb4f1882db412",
+  "name" : "POST - Testar adicionar gestor sem passar payload no body",
+  "time" : {
+    "start" : 1670186971802,
+    "stop" : 1670186972114,
+    "duration" : 312
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "126d5c6a9bc39b69",
+  "name" : "GET - Listar todos os formulários",
+  "time" : {
+    "start" : 1670186956280,
+    "stop" : 1670186957195,
+    "duration" : 915
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "393ba7b93756a9af",
+  "name" : "POST - Testar criar candidato nome menor que 3 caracteres",
+  "time" : {
+    "start" : 1670186918420,
+    "stop" : 1670186920039,
+    "duration" : 1619
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5660e388bf3dd116",
+  "name" : "GET - Deve listar o gestor passando ID",
+  "time" : {
+    "start" : 1670186966990,
+    "stop" : 1670186967979,
+    "duration" : 989
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cb57b8ab210866ea",
+  "name" : "GET - Listar todas as avaliações",
+  "time" : {
+    "start" : 1670186873347,
+    "stop" : 1670186884660,
+    "duration" : 11313
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "742be0167988c785",
+  "name" : "GET - Listar todas as trilhas",
+  "time" : {
+    "start" : 1670186993187,
+    "stop" : 1670186993689,
+    "duration" : 502
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d787a52a792aaa0a",
+  "name" : "POST - Testar criar um formulário sem payload",
+  "time" : {
+    "start" : 1670186949747,
+    "stop" : 1670186949921,
+    "duration" : 174
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "beb98b18a3f0cf3c",
+  "name" : "PUT - Tentar atualizar formulário com ID inexistente",
+  "time" : {
+    "start" : 1670186954542,
+    "stop" : 1670186955812,
+    "duration" : 1270
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "793e40f33e540997",
+  "name" : "POST - Testar criar candidato sem RG",
+  "time" : {
+    "start" : 1670186917055,
+    "stop" : 1670186917932,
+    "duration" : 877
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ec462e68af051e8e",
+  "name" : "POST - Deve criar um novo candidato",
+  "time" : {
+    "start" : 1670186910342,
+    "stop" : 1670186913637,
+    "duration" : 3295
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "247253b145761154",
+  "name" : "DELETE - Testar deletar avliação com ID incorreto",
+  "time" : {
+    "start" : 1670186869165,
+    "stop" : 1670186873333,
+    "duration" : 4168
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "51990599eb89e33b",
+  "name" : "GET - Listar inscrição Por ID",
+  "time" : {
+    "start" : 1670186986280,
+    "stop" : 1670186987807,
+    "duration" : 1527
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "70ae42ffc7c56126",
+  "name" : "POST - Testar criar formulário sem preencher instituição",
+  "time" : {
+    "start" : 1670186950327,
+    "stop" : 1670186950423,
+    "duration" : 96
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7e9d4f1593f7f93a",
+  "name" : "GET - Tentar buscar por email inexistente",
+  "time" : {
+    "start" : 1670186989308,
+    "stop" : 1670186990873,
+    "duration" : 1565
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "18c81810592a79d1",
+  "name" : "GET - Tentar listar todos os formulários sem, passar queries",
+  "time" : {
+    "start" : 1670186958443,
+    "stop" : 1670186958803,
+    "duration" : 360
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d2ed7b3c51c55da1",
+  "name" : "PUT - Testar atualizar candidato preechendo ID inexistente",
+  "time" : {
+    "start" : 1670186929729,
+    "stop" : 1670186930950,
+    "duration" : 1221
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a136505b597513f7",
+  "name" : "PUT - Testar atualizar pessoa sem passar ID",
+  "time" : {
+    "start" : 1670186975287,
+    "stop" : 1670186975407,
+    "duration" : 120
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bac72d3ec844d1af",
+  "name" : "POST - Testar adicionar um gestor com nome inválido",
+  "time" : {
+    "start" : 1670186972270,
+    "stop" : 1670186972394,
+    "duration" : 124
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4d45d90719456e9f",
+  "name" : "GET - Deve listar o gestor logado",
+  "time" : {
+    "start" : 1670186966760,
+    "stop" : 1670186966985,
+    "duration" : 225
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5d34740d89cb469c",
+  "name" : "POST - Testar criar um formulário sem estar matriculado",
+  "time" : {
+    "start" : 1670186949925,
+    "stop" : 1670186950055,
+    "duration" : 130
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3495603d79fd401b",
+  "name" : "PUT - Tentar desativar conta inexistente",
+  "time" : {
+    "start" : 1670186969559,
+    "stop" : 1670186970624,
+    "duration" : 1065
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "d4d9a701ef03837d",
+  "name" : "GET - Listar todas as inscrições",
+  "time" : {
+    "start" : 1670186985671,
+    "stop" : 1670186986276,
+    "duration" : 605
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "df3a10c5930bddde",
+  "name" : "DELETE - Deve deletar uma avaliação",
+  "time" : {
+    "start" : 1670186818025,
+    "stop" : 1670186869153,
+    "duration" : 51128
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "134baa9793698486",
+  "name" : "PUT - Testar atualizar avaliação passando ID inexistente",
+  "time" : {
+    "start" : 1670186887527,
+    "stop" : 1670186888386,
+    "duration" : 859
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "62167f30ee066bf9",
+  "name" : "POST - Deve criar um novo formulário corretamente",
+  "time" : {
+    "start" : 1670186949421,
+    "stop" : 1670186949742,
+    "duration" : 321
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "16c8b89fa2573b34",
+  "name" : "DELETE - Testar deletar formulário com id inválido",
+  "time" : {
+    "start" : 1670186950857,
+    "stop" : 1670186950969,
+    "duration" : 112
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "be2255163822051a",
+  "name" : "PUT - Tentar atualizar formulário com campos inválidos",
+  "time" : {
+    "start" : 1670186952985,
+    "stop" : 1670186954537,
+    "duration" : 1552
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9e3df27cee6235ae",
+  "name" : "DELETE - Deve deletar um Gestor corretamente",
+  "time" : {
+    "start" : 1670186973366,
+    "stop" : 1670186974171,
+    "duration" : 805
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "58cb51ebc478d835",
+  "name" : "DELETE - Deve deletar um usuário",
+  "time" : {
+    "start" : 1670186920045,
+    "stop" : 1670186926066,
+    "duration" : 6021
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5336556e0c84a2eb",
+  "name" : "DELETE - Testar deletar um gestor passando ID inexistente",
+  "time" : {
+    "start" : 1670186974173,
+    "stop" : 1670186974287,
+    "duration" : 114
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "13e77389c6f9c72e",
+  "name" : "PUT - Deve desativar uma conta",
+  "time" : {
+    "start" : 1670186968816,
+    "stop" : 1670186969555,
+    "duration" : 739
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "671282bc5ae2b7ba",
+  "name" : "POST - Testar criar formulário sem digitar curso",
+  "time" : {
+    "start" : 1670186950059,
+    "stop" : 1670186950322,
+    "duration" : 263
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "65a3ec30e4b7255d",
+  "name" : "GET - Testar listar inscrição por ID inválido",
+  "time" : {
+    "start" : 1670186987810,
+    "stop" : 1670186987916,
+    "duration" : 106
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "444b33802c60d03f",
+  "name" : "GET - Deve listar todos os candidatos do banco de dados ",
+  "time" : {
+    "start" : 1670186898652,
+    "stop" : 1670186910311,
+    "duration" : 11659
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "73d7caee0b43646b",
+  "name" : "PUT - Testar atualizar um candidato com dados vazios",
+  "time" : {
+    "start" : 1670186928715,
+    "stop" : 1670186929726,
+    "duration" : 1011
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5e33445d109dcce4",
+  "name" : "GET - Listar todas as contas inativas",
+  "time" : {
+    "start" : 1670186970663,
+    "stop" : 1670186970869,
+    "duration" : 206
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5824a71ddaffd0af",
+  "name" : "DELETE - Tentar deletar gestor com conta de colaborador | Retorna mensagem de erro",
+  "time" : {
+    "start" : 1670186939602,
+    "stop" : 1670186945091,
+    "duration" : 5489
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "40f6f0431a69adf1",
+  "name" : "GET - Listar avaliação por email",
+  "time" : {
+    "start" : 1670186884665,
+    "stop" : 1670186886531,
+    "duration" : 1866
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "39f2380498deecec",
+  "name" : "POST - Testar adicionar gestor com dados vazios",
+  "time" : {
+    "start" : 1670186972116,
+    "stop" : 1670186972268,
+    "duration" : 152
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a0a8c5d1dc1ef828",
+  "name" : "POST - Tentar criar gestor com conta de colaborador | Retorna mensagem de erro",
+  "time" : {
+    "start" : 1670186937439,
+    "stop" : 1670186939561,
+    "duration" : 2122
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "35b26a6863693b60",
+  "name" : "POST - Testar adicionar um gestor com email inválido",
+  "time" : {
+    "start" : 1670186972505,
+    "stop" : 1670186973363,
+    "duration" : 858
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "704860c3d64d24dd",
+  "name" : "GET - Deve listar todos os gestores do banco de dados ",
+  "time" : {
+    "start" : 1670186966298,
+    "stop" : 1670186966755,
+    "duration" : 457
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "90d78e45a89d292e",
+  "name" : "POST - Tentar criar inscrção sem candidato",
+  "time" : {
+    "start" : 1670186985274,
+    "stop" : 1670186985665,
+    "duration" : 391
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "60b3b83ac6d6af94",
+  "name" : "GET - Listar por email",
+  "time" : {
+    "start" : 1670186987920,
+    "stop" : 1670186989305,
+    "duration" : 1385
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "73fd243b5616d1dc",
+  "name" : "POST - Deve criar nova avaliação no banco de dados",
+  "time" : {
+    "start" : 1670186787703,
+    "stop" : 1670186817981,
+    "duration" : 30278
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "3e7b6a40cf992e55",
+  "name" : "PUT - Deve atualizar um formulário existente",
+  "time" : {
+    "start" : 1670186950972,
+    "stop" : 1670186951550,
+    "duration" : 578
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6f455e2d08c33f77",
+  "name" : "POST - Deve criar nova inscrição no banco de dados",
+  "time" : {
+    "start" : 1670186982467,
+    "stop" : 1670186985256,
+    "duration" : 2789
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6a8bbf3219f45249",
+  "name" : "PUT - Deve atualizar um gestor corretamente",
+  "time" : {
+    "start" : 1670186974494,
+    "stop" : 1670186975284,
+    "duration" : 790
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7b3e12e2168189ea",
+  "name" : "DELETE - Testar deletar usuário sem passar ID",
+  "time" : {
+    "start" : 1670186926071,
+    "stop" : 1670186926186,
+    "duration" : 115
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aade4d94db1d8cc2",
+  "name" : "POST - Testar criar candidato com CPF inválido",
+  "time" : {
+    "start" : 1670186917936,
+    "stop" : 1670186918417,
+    "duration" : 481
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b47f568d54b95afc",
+  "name" : "PUT - Testar atualizar um candidato com nome inválido",
+  "time" : {
+    "start" : 1670186930953,
+    "stop" : 1670186931345,
+    "duration" : 392
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ba0406e14ca0110",
+  "name" : "PUT - Deve atualizar uma avaliação",
+  "time" : {
+    "start" : 1670186886542,
+    "stop" : 1670186887514,
+    "duration" : 972
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "623302da261ce111",
+  "name" : "PUT - Testar atualizar pessoa dados vazios ",
+  "time" : {
+    "start" : 1670186975411,
+    "stop" : 1670186975975,
+    "duration" : 564
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

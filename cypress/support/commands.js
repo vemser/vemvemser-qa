@@ -53,7 +53,7 @@ Cypress.Commands.add('login', () => {
       },
       body: {
         "email": "admin@dbccompany.com.br",
-        "senha": "admin123"
+        "senha": "qwe123QWE!@#"
       },
       failOnStatusCode: false
     })
