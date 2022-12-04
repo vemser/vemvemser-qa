@@ -1,72 +1,58 @@
+import { baseUrl } from "../../support/commands";
 import BasePage from "./BasePage";
 
 const basePage = new BasePage();
 
-const email = "#email"
-const password = "#password"
-const btnLogin = "#btn-login"
-const btnRegister = "#register"
-
+const email = "#home-email";
+const password = "#home-senha";
+const btnLogin = "#home-entrar";
+const btnRegister = "#register";
+const loginErrorText = ".Toastify__toast-body > :nth-child(2)";
+const dashboardURL = `${baseUrl}/dashboard`;
+const inscricaoTitle = ".MuiBox-root > .MuiTypography-root";
+const emailErrorTxt = "#home-email-helper-text";
+const senhaErrorTxt = "#home-senha-helper-text";
 export default class LoginPage {
+  fillFieldEmail(text) {
+    basePage.fillInput(email, text);
+  }
 
+  fillFieldPassword(text) {
+    basePage.fillInput(password, text);
+  }
 
-    preencherCampoEmail(text) {
-        basePage.preencherInput(email, text)
-    }
+  clickBtnFazerLogin() {
+    basePage.click(btnLogin);
+  }
 
-    preencherCampoPassword(text) {
-        basePage.preencherInput(password, text)
-    }
+  clickBtnRegistrar() {
+    basePage.click(btnRegister);
+  }
 
-    clicarBtnFazerLogin() {
-        basePage.click(btnLogin)
-    }
+  validateLoginError() {
+    basePage.validateText(loginErrorText, "Email ou senha inválidos");
+  }
 
-    clicarBtnRegistrar() {
-        basePage.click(btnRegister)
-    }
+  validateCampoEmailError() {
+    basePage.validateText(emailErrorTxt, "Digite seu email");
+  }
 
-   /*  validarContaLogada(text) {
-        basePage.validarText(campoExibicaoContaLogada, "Olá, "+text)
-    }
+  validateLoginCamposVaziosError() {
+    basePage.validateText(emailErrorTxt, "Digite seu email");
+    basePage.validateText(senhaErrorTxt, "Digite sua senha");
+  }
 
-    validarMsgErrorEmailNaoPossuiConta() {
-        basePage.validarText(msgErroEmailNaoExisteBaseDados, 'Não encontramos uma conta associada a este endereço de e-mail')
-    }
+  validateRedirecionarParaDashboard() {
+    basePage.validateRedirecionarPagina(dashboardURL);
+  }
 
-    validarMsgErrorSenhaIncorreta() {
-        basePage.validarText(msgErroSenhaIncorreta, 'Sua senha está incorreta')
-    }
+  validateRedirecionarParaInscricao() {
+    basePage.validateText(inscricaoTitle, "Informações Cadastrais");
+  }
 
-
-    // FUNCIONALIDADE CRIAR CONTA 
-
-    preencherCampoNome(text) {
-        basePage.preencherInput(campoNome, text)
-    }
-
-    preencherCampoEmail(text) {
-        basePage.preencherInput(campoEmail, text)
-    }
-
-    preencherCampoSenhaCriacao(text) {
-        basePage.preencherInput(campoSenha, text)
-    }
-
-    preencherCampoConfimarSenhaCriacao(text) {
-        basePage.preencherInput(campoConfirmarSenha, text)
-    }
-
-    clicarBtnContinuarCriacaoConta() {
-        basePage.click(btnContinuarCriacaoConta)
-    }
-
-    validarErroEmailCadastrado(text) {
-        basePage.validarText(campoMsgErrorEmailCadastrado, text)
-    }
-
-    validarErroSenhaDiferentes(text) {
-        basePage.validarText(campoErroSenhasDiferentes, text)
-    }
- */
+  login(user) {
+    this.fillFieldEmail(user.email);
+    this.fillFieldPassword(user.password);
+    this.clickBtnFazerLogin();
+  }
 }

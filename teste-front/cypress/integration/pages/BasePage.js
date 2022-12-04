@@ -9,48 +9,64 @@ export default class BasePage {
     cy.get(elemet).click({ force: true });
   }
 
-  preencherInput(element, text) {
+  fillInput(element, text) {
     cy.get(element).type(text);
   }
 
-  preencherInputComTeclaNoFinal(element, text, tecla) {
+  fillInputComTeclaNoFinal(element, text, tecla) {
     cy.get(element).type(text).type(tecla);
   }
 
-  preencherInputForce(element, text) {
+  fillInputForce(element, text) {
     cy.get(element).type(text, { force: true });
   }
 
-  limparInput(element) {
+  clearInput(element) {
     cy.get(element).clear();
   }
 
   hoverElement(element, popover) {
-    cy.get(element).trigger('mouseover')
-    cy.get(popover).should('be.visible') 
+    cy.get(element).trigger("mouseover");
+    cy.get(popover).should("be.visible");
   }
 
-  tempo(tempo) {
-    cy.wait(tempo);
+  time(time) {
+    cy.wait(time);
   }
 
   select(element, value) {
     cy.get(element).select(value);
   }
 
-  validarText(element, text) {
+  validateText(element, text) {
     cy.get(element).should("contain", text);
   }
 
-  invalidarText(element, text) {
+  invalidateText(element, text) {
     cy.get(element).should("not.contain", text);
   }
 
-  validarQuantItemNaLista(element, quant) {
+  validateQuantItemNaLista(element, quant) {
     cy.get(element).should("have.length", quant);
   }
 
-  validarRedirecionarPagina(urlExpected) {
+  validateRedirecionarPagina(urlExpected) {
     cy.url().should("contain", urlExpected);
+  }
+
+  validateNaoRedirecionarPagina(urlExpected) {
+    cy.url().should("not.contain", urlExpected);
+  }
+
+  validateNotExist(element) {
+    cy.get(element).should("not.exist");
+  }
+
+  validateIsDisabled(element) {
+    cy.get(element).should("be.disabled");
+  }
+
+  haveAttributeDisabled(element) {
+    cy.get(element).should("have.attr", "disabled");
   }
 }

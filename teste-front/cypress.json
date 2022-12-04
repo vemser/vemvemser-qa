@@ -1,1 +1,10 @@
-{"video": false, "testFiles": "**/steps/*.*"}
+{
+  "env": {
+    "baseUrl": "http://vemser-dbc.dbccompany.com.br:39000/vemser/vemvemser-front"
+  },
+  "video": false, 
+  "testFiles": "**/steps/*.*", 
+  "chromeWebSecurity": false,
+  "viewportWidth": 1080,
+  "viewportHeight": 900
+}

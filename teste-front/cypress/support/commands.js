@@ -1,3 +1,5 @@
-before(() => {
-  cy.visit("https://vemser-vemser.vercel.app/")
+import "cypress-localstorage-commands";
+export const baseUrl = Cypress.env("baseUrl");
+beforeEach(() => {
+  cy.visit(baseUrl);
 });
